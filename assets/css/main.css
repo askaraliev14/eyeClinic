@@ -1,0 +1,154 @@
+/* ***************DEFAULT ****************** */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 400;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --blue: #1881e2;
+  --dark-blue: #071141;
+  --white: #ffffff;
+  --linear-grey: rgba(0, 32, 51, 0.6);
+  --green: #08a071;
+  --linear-brown: linear-gradient(180deg, #ffdba9 0%, #d5ab71 100%);
+  --radial-blue: radial-gradient(
+    175.94% 172.82% at 16.98% -14.71%,
+    #ceedff 0%,
+    #c5e7ff 46.27%,
+    #79c3fe 100%
+  );
+  --radial-pink: radial-gradient(
+    175.94% 172.82% at 16.98% -14.71%,
+    #fff3f3 0%,
+    #ffeaea 46.27%,
+    #ffc8c8 100%
+  );
+  --light-brown: #ffdba9;
+  --brown: #dabd95;
+  --light-green: #33bf24;
+  --linear-green: rgba(51, 191, 36, 0.1);
+}
+.container {
+  max-width: 1470px;
+}
+
+/* ***************DEFAULT ****************** */
+/* ***************HEADER****************** */
+
+.header-topbar {
+  border: 1px solid red;
+  height: 80px;
+}
+
+.header-navigation {
+  margin-top: 20px;
+  width: 100%;
+  height: 62px;
+  border-radius: 21px;
+  border: 1px solid;
+  border-color: var(--brown);
+}
+.header-navigation__nav {
+  display: flex;
+}
+.header-navigation__home {
+  height: 60px;
+  width: 68px;
+  background-image: url(../images/svgs/home-header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  list-style: none;
+  margin: 0 10px;
+}
+.header-navigation__item {
+  padding: 0 32px;
+  font-size: 16px;
+  line-height: 60px;
+  list-style: none;
+}
+.header-navigation__link {
+  text-decoration: none;
+}
+
+/* ***************HEADER****************** */
+/* ***************BUTTON GROUP****************** */
+
+.appointment-btn{
+    max-width: 265px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+    line-height: 24px;
+}
+/* ***************BUTTON GROUP****************** */
