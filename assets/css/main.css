@@ -1,4 +1,5 @@
 /* ***************DEFAULT ****************** */
+@import "./fonts.css";
 html,
 body,
 div,
@@ -78,6 +79,7 @@ body {
 :root {
   --blue: #1881e2;
   --dark-blue: #071141;
+  --border-grey: #f2f2f2;
   --white: #ffffff;
   --linear-grey: rgba(0, 32, 51, 0.6);
   --green: #08a071;
@@ -100,7 +102,7 @@ body {
   --linear-green: rgba(51, 191, 36, 0.1);
 }
 .container {
-  max-width: 1470px;
+  max-width: 1460px;
 }
 
 /* ***************DEFAULT ****************** */
@@ -133,22 +135,48 @@ body {
 }
 .header-navigation__item {
   padding: 0 32px;
-  font-size: 16px;
-  line-height: 60px;
   list-style: none;
+  border-right: 1px solid;
+  border-color: var(--border-grey);
+}
+.header-navigation__item:last-child {
+  border: none;
 }
 .header-navigation__link {
   text-decoration: none;
+  color: var(--dark-blue);
+  font-size: 16px;
+  line-height: 60px;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
 /* ***************HEADER****************** */
 /* ***************BUTTON GROUP****************** */
 
-.appointment-btn{
-    max-width: 265px;
-    height: 60px;
-    border-radius: 60px;
-    font-size: 20px;
-    line-height: 24px;
+.appointment-btn {
+  max-width: 265px;
+  height: 60px;
+  border-radius: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 265px;
+  background: linear-gradient(180deg, #ffdba9 0%, #d5ab71 100%);
+  box-shadow: 0px 10px 20px rgba(126, 79, 16, 0.2),
+    inset 0px -5px 8px rgba(255, 255, 255, 0.3);
+}
+.appointment-btn::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(4px);
+  width: 203px;
+  height: 9px;
+  top: 0;
+  top: -5px;
+  left: 45px;
 }
 /* ***************BUTTON GROUP****************** */
