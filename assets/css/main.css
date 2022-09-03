@@ -1,5 +1,6 @@
 /* ***************DEFAULT ****************** */
 @import "./fonts.css";
+@import "./container.css";
 html,
 body,
 div,
@@ -78,6 +79,7 @@ body {
 }
 :root {
   --blue: #1881e2;
+  --linear-blue: linear-gradient(344.32deg, #1881e2 -21.59%, #5accf0 78.06%);
   --dark-blue: #071141;
   --border-grey: #f2f2f2;
   --white: #ffffff;
@@ -101,9 +103,6 @@ body {
   --light-green: #33bf24;
   --linear-green: rgba(51, 191, 36, 0.1);
 }
-.container {
-  max-width: 1460px;
-}
 
 /* ***************DEFAULT ****************** */
 /* ***************HEADER****************** */
@@ -111,8 +110,43 @@ body {
 .header-topbar {
   border: 1px solid red;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.header-logo {
+  background-image: none;
+}
+.topbar-info {
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+}
+.topbar-img {
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+.topbar-regText {
+  color: var(--linear-grey);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter";
+}
+.topbar-boldText {
+  color: var(--dark-blue);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
 .header-navigation {
   margin-top: 20px;
   width: 100%;
@@ -179,4 +213,154 @@ body {
   top: -5px;
   left: 45px;
 }
+.banner-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  outline: none;
+  border: none;
+  background: var(--linear-blue);
+  box-shadow: inset 0px -6px 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-blur {
+  width: 424px;
+  height: 119px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  padding: 16px;
+}
+.banner-btn::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(4px);
+  width: 203px;
+  height: 9px;
+  top: 0;
+  top: -5px;
+  left: 45px;
+}
+.btn-arrow {
+  margin-left: 20px;
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background-image: url(/assets/images/svgs/IconBtnMd.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.btn-arrow::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(
+    146.89deg,
+    rgba(255, 255, 255, 0.8) 9.87%,
+    rgba(255, 255, 255, 0.672) 96.14%
+  );
+  backdrop-filter: blur(24px);
+  border-radius: 50%;
+}
+.btn-arrow::after {
+  content: "";
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  background-image: url("/assets/images/svgs/arrowRight.svg");
+}
 /* ***************BUTTON GROUP****************** */
+/* ***************CSS TEXT AROUND TEXT ************* */
+a.fx-Revolve:focus {
+  box-shadow: 0 0 3pt 2pt #75acf8;
+  position: relative;
+  outline: 0;
+}
+a.fx-Revolve:focus:before {
+  border-radius: inherit;
+  content: "";
+  width: calc(100% - 2.2em);
+  height: calc(100% - 2.2em);
+  margin: 1em;
+  box-shadow: inset 0 0 3pt 2pt #75acf8;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* ***************CSS TEXT AROUND TEXT ************* */
+/* *************** SWIPER ************* */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container {
+  margin-top: 30px;
+  padding: 50px 30px 0px 30px;
+}
+.banner-1 {
+  background-image: url(../images/temporary/BannerHeader.webp) !important;
+  background-size: cover !important;
+}
+.slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  height: 528px !important;
+  align-items: center;
+  width: 1440px !important;
+  /* width: 70% !important; */
+  border: 1px solid red;
+  border-radius: 40px;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -330px;
+  padding: 0 30px;
+}
+.btn-next,
+.btn-prev{
+  width: 108px;
+  height: 112px;
+  z-index: 1;
+  top: 50%;
+   background-image: url(/assets/images/svgs/bannerBtn.svg);
+  transition: transform 1s linear;
+}
+.btn-img{
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.btn-img::before{
+  content: "";
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  background-color: #fff;
+  border-style: none;
+}
+.btn-next:hover,
+.btn-prev:hover{
+  transform: rotate(180deg);
+}
+/* *************** SWIPER ************* */

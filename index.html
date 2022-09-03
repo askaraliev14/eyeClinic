@@ -8,13 +8,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+   
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-topbar">
+          <a href="/" class="header-logo">
+            <img src="/assets/images/images/logo.webp" alt="logo">
+          </a>
+          <div class="topbar-info">
+            <img class="topbar-img" src="/assets/images/images/Location.webp">
+            <div class="topbar-text">
+              <span class="topbar-regText">Метро Народное Ополчение</span>
+              <span class="topbar-boldText">пр-кт Маршала Жукова, д. 59</span>
+            </div>
+          </div>
+          <div class="topbar-info">        
+            <img class="topbar-img" src="./assets/images/images/Phone.webp">
+            <div class="topbar-text">
+              <span class="topbar-regText">ежедневно: 9:00 - 21:00</span>
+              <span class="topbar-boldText">+7 (489) 400-00-00</span>
+            </div>
+          </div>
           <button class="appointment-btn">Запись на приём</button>
         </div>
         <div class="header-navigation">
@@ -53,6 +74,35 @@
           </ul>
         </div>
       </div>
+      <div class="swiper mySwiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide banner-1">
+            <!-- <div class="btn-blur">
+              <button class="banner-btn">ЗАПИШИТЕСЬ НА ПРИЁМ
+                <span class="btn-arrow"></span>
+              </button>
+            </div> -->
+          </div>
+          <div class="swiper-slide slide">Slide 2</div>
+          <div class="swiper-slide slide">Slide 3</div>
+        </div>
+        <div class="container btn-box">
+          <div class="btn-next">
+            <img class="btn-img" src="/assets/images/temporary/btn-m.webp"/>
+          </div>
+          <div class="btn-prev">
+            <img class="btn-img"/>
+          </div>
+        </div>
+      </div>
     </header>
+    <main>
+
+
+
+    <!-- SCRIPTS JS -->
+    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
