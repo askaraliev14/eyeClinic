@@ -84,4 +84,22 @@
     prevEl: '.btn-prev',
   },
       });
+
+
+      var swiper = new Swiper(".certificateSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        loop: true,
+        slidesPerGroup: 1,
+        paginationClickable: true,
+        spaceBetween: 40,
+        pagination: {
+          el: ".cert-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".arrow-right",
+          prevEl: ".arrow-left",
+        },
+      });
 // SWIPER END
