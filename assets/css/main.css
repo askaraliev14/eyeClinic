@@ -1045,6 +1045,7 @@ a.fx-Revolve:focus:before {
   justify-content: space-between;
   background-position: -100px;
   background-repeat: no-repeat;
+  flex-direction: column;
 }
 
 .quality-control {
@@ -1123,20 +1124,39 @@ a.fx-Revolve:focus:before {
   margin-top: 15px;
 }
 
-.time-box__brown{
+.time-box__brown {
   margin-top: 16px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 140%;
-  color: linear-gradient(180deg, #FFDBA9 0%, #D5AB71 100%);
+  color: #D4AB71;
+}
+
+.time-box p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: rgba(0, 32, 51, 0.6);
+  margin-top: 15px;
 }
 
 .qc-img {
   position: relative;
   width: 268px;
   height: 410px;
+  left: 1330px;
+  top: -180px;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* CERTIFICATE SLIDER END*/
