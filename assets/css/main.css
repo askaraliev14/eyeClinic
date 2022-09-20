@@ -327,6 +327,7 @@ body {
 
 .appointment-btn__icon img {
   z-index: 9;
+  display: flex !important;
 }
 
 .banner-btn {

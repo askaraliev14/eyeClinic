@@ -398,6 +398,7 @@
 
     .service-tab {
         height: 160px;
+        padding: 20px 16px;
     }
 
     .service-tab__text_span {
@@ -553,9 +554,25 @@
         width: 48%;
     }
 
+    .comments-rates {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
+    .contact{
+        margin-bottom: 30px;
+    }
+    .mt-30 {
+        margin-top: 30px !important;
+    }
+
+    .accordion-thumb::before {
+        left: -5px;
+        top: 2px;
+    }
+
     .comments-container {
         flex-direction: column;
     }
@@ -690,8 +707,13 @@
         margin-top: 30px;
     }
 
-    .accordion-panel {
+    .accordion-thumb {
         padding: 0;
+        padding-left: 5px;
+    }
+
+    .accordion-panel {
+        padding: 0 5px;
         margin-top: 10px;
     }
 
@@ -1072,7 +1094,7 @@
     }
 
     .sale-info__title {
-        font-size: 28px;
+        font-size: 22px;
         margin-top: 15px;
     }
 
