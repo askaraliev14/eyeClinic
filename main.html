@@ -1,972 +1,917 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-topbar">
+        <a href="/" class="header-logo">
+            <img src="./assets/images/images/logo.webp" alt="logo">
+        </a>
+        <div class="topbar-info">
+            <img class="topbar-img" src="./assets/images/images/Location.webp">
+            <div class="topbar-text">
+                <span class="topbar-regText">Метро Народное Ополчение</span>
+                <span class="topbar-boldText">пр-кт Маршала Жукова, д. 59</span>
+            </div>
+        </div>
+        <div class="topbar-info">
+            <img class="topbar-img" src="./assets/images/images/Phone.webp">
+            <div class="topbar-text">
+                <span class="topbar-regText">ежедневно: 9:00 - 21:00</span>
+                <span class="topbar-boldText">+7 (489) 400-00-00</span>
+            </div>
+        </div>
+        <button class="appointment-btn">Запись на приём
+            <span class="appointment-btn__icon">
+                <img src="./assets/images/svgs/arrow-right-header.png" alt="icon">
+            </span>
+        </button>
+    </div>
+</div>
+<header class="header">
+    <div class="container">
+        <nav class="header-navigation">
+            <a href="/" class="mobile-logo">
+                <img src="./assets/images/images/logo.webp" alt="logo">
+            </a>
+            <a href="#" class="menu__mobile_button">
+                <span></span>
+            </a>
+            <ul class="header-navigation__nav  mobile-header">
+                <li class="header-navigation__item plr-20">
+                    <a href="/main.html" class="header-navigation__home"></a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/about.html" class="header-navigation__link">О нас</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/services.html" class="header-navigation__link">Услуги</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/price.html" class="header-navigation__link">Цены</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/docs.html" class="header-navigation__link">Врачи</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/equipment.html" class="header-navigation__link">Оборудование</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/sale.html" class="header-navigation__link">Акции</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/review.html" class="header-navigation__link">Отзывы</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/vacancy.html" class="header-navigation__link">Вакансии</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/questions.html" class="header-navigation__link">Вопросы и ответы</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="/contact.html" class="header-navigation__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <main>
+    <section class="bg-brown">
+      <div class="clinic-box container">
+        <div class="clinic-box__up">
+          <div class="info-clinic">
+            <h1 class="clinic-title">О нашей клинике</h1>
+            <h3 class="clinic-subTitle">
+              Стремимся вернуть вам здоровое зрение
+            </h3>
+            <p class="clinic-p">
+              Забота о вашем зрении – главная цель офтальмологии «eye clinic».
+              Мы предлагаем новейшие решения в диагностике и лечении глазных
+              заболеваний, чтобы вы могли видеть красоту окружающего мира во
+              всем его многообразии.
+              <br />
+              <br />
+              Офтальмология «eye clinic» является частью огромной сети клиник
+              «eye clinic» с многолетней историей, высококвалифицированными
+              специалистами и инновационным оборудованием. Наши пациенты
+              доверяют нам самое главное – свое здоровье и здоровье своих
+              детей. Мы ценим это доверие и стремимся совершенствовать свои
+              возможности, придерживаясь неизменно высокого качества.
+            </p>
+          </div>
+          <div class="clinic-mark">
+            <img class="mark-img" alt="mark-img" src="./assets/images/images/dart-mark.webp" />
+            <div class="mark-textBox">
+              <p class="mark-p">
+                Забота, профессионализм, вежливость и деликатность в работе с
+                пациентами
+              </p>
+              <span class="mark-brown">— наша визитная карточка.</span>
+            </div>
+          </div>
+        </div>
+        <div class="clinic-box__down">
+          <div class="mark-box">
+            <img class="mark-box__img" alt="mark-box" src="./assets/images/images/certificate-circle.webp" />
+            <h5 class="mark-box__title">
+              В ЦЕНТРЕ РАБОТАЮТ СПЕЦИАЛИСТЫ ВЫСОЧАЙШЕГО КЛАССА
+            </h5>
+            <p class="mark-box__info">
+              оперируют хирурги с мировым именем, стоявшие у истоков
+              современных операций по удалению катаракты и лазерной коррекции
+              зрения.
+            </p>
+          </div>
+          <div class="mark-box">
+            <img class="mark-box__img" alt="mark-box" src="./assets/images/images/eye-circle.webp" />
+            <h5 class="mark-box__title">БОЛЕЕ 10 000 УСПЕШНЫХ ОПЕРАЦИЙ</h5>
+            <p class="mark-box__info">
+              Большинство из них самые сложнейшие, до недавнего времени не
+              выполняемые нигде в России.
+            </p>
+          </div>
+          <div class="mark-box">
+            <img class="mark-box__img" alt="mark-box" src="./assets/images/images/microscope-circle.webp" />
+            <h5 class="mark-box__title">ОБОРУДОВАНИЕ МИРОВОГО СТАНДАРТА</h5>
+            <p class="mark-box__info">
+              Центр оснащен самым современным оборудованием.
+            </p>
+          </div>
+          <div class="mark-box">
+            <img class="mark-box__img" alt="mark-box" src="./assets/images/images/hand-circle (1).webp" />
+            <h5 class="mark-box__title">Самые современные методики</h5>
+            <p class="mark-box__info">
+              Технология Фемто Супер Ласик, Супракор, фемтосекундное удаление
+              катаракты.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-tabs container">
+      <div class="info-tab">
+        <h3 class="info-tab__title">
+          Проводим лечение в соответствии с мировыми стандартами офтальмологии
+        </h3>
+        <p class="info-tab__p">
+          За 7 лет успешно провели более 10 000 операций, в том числе наиболее
+          сложных при сопутствующих паталогиях
+        </p>
+        <img alt="info-tab" class="info-tab__img" src="./assets/images/images/1-tab.webp" />
+      </div>
+      <div class="info-tab">
+        <h3 class="info-tab__title">Длительность операции менее 15 минут:</h3>
+        <p class="info-tab__p">
+          без болевых ощущений с гарантией восстановления остроты зрения до
+          100% реабилитация за 1 день
+        </p>
+        <img alt="info-tab" class="info-tab__img" src="./assets/images/images/2-tab.webp" />
+      </div>
+      <div class="info-tab">
+        <h3 class="info-tab__title">
+          Демократичные цены с беспроцентной рассрочкой
+        </h3>
+        <p class="info-tab__p">
+          Стоимость операции ниже на 15-20%, чем в среднем по Москве благодаря
+          прямому сотрудничеству с ведущими мировыми изготовителями
+          хрусталиков
+        </p>
+        <img alt="info-tab" class="info-tab__img" src="./assets/images/images/3-tab.webp" />
+      </div>
+    </section>
+    <section class="clinic-staff__bg">
+      <div class="clinic-staff container">
+        <div class="staff-infoTabs">
+          <div class="staff-info">
+            <h3 class="staff-title">Мы собрали команду профессионалов</h3>
+            <p class="staff-p">
+              В нашей клинике установлено инновационное, высокотехнологичное
+              оборудование. Оно позволяет проводить точную, безошибочную
+              диагностику глаз, а также эффективное, комфортное для пациента
+              лечение.
+            </p>
+            <p class="staff-span">
+              Мы прооперировали более 4000 пациентов.
+            </p>
+          </div>
+          <div class="staff-tabs">
+            <div class="staff-tab">
+              <img class="staff-tab__img" src="./assets/images/images/staff-tabs (1).webp" />
+              <div>
+                <span class="staff-tabTitle">Высокий профессионализм</span>
+                <p class="staff-tabP">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+              </div>
+            </div>
+            <div class="staff-tab">
+              <img class="staff-tab__img" src="./assets/images/images/staff-tabs (2).webp" />
+              <div>
+                <span class="staff-tabTitle">Дружная команда</span>
+                <p class="staff-tabP">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+              </div>
+            </div>
+            <div class="staff-tab">
+              <img class="staff-tab__img" src="./assets/images/images/staff-tabs (3).webp" />
+              <div>
+                <span class="staff-tabTitle">Забота о клиентах</span>
+                <p class="staff-tabP">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="staff-box">
+          <h2 class="staff-title">
+            А теперь коротко о каждом специалисте:
+          </h2>
+
+          <div class="staff-card mt-60">
+            <div class="staff-card__info">
+              <h3 class="staff-name">Борзых Виктор Анатольевич</h3>
+              <span class="staff-occupation">Врач-офтальмохирург</span>
+
+              <div class="staff-edu">
+                <img class="staff-univImg" alt="univer-emblem" src="./assets/images/images/univer-emblem.webp" />
+                <div class="staff-univText">
+                  <span class="staff-univTitle">
+                    Образование:
+                  </span>
+                  <p class="staff-univP">
+                    Московский государственный медицинский университет имени
+                    И.М. Сеченова
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="staff-list">
+                  • Диагностика и лечение патологий органов зрения
+                  <br />
+                  • Рефракционная хирургия
+                  <br />
+                  • Блефаропластика
+                </p>
+                <span class="staff-list__blue">
+                  • Стаж работы <span>12 лет</span></span>
+              </div>
+              <button class="staff-info__btn">Записаться к врачу</button>
+            </div>
+            <div class="img-box">
+              <img class="staff-img" src="./assets/images/images/nurse 1(1).webp" alt="nurse" />
+            </div>
+            <div class="certificateSwiper certificate-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+              <div class="arrow-left"></div>
+              <div class="cert-pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-card__info">
+              <h3 class="staff-name">Курачинова Зарина Арсеновна</h3>
+              <span class="staff-occupation">Врач-офтальмохирург</span>
+
+              <div class="staff-edu">
+                <img class="staff-univImg" alt="univer-emblem" src="./assets/images/images/univer-emblem.webp" />
+                <div class="staff-univText">
+                  <span class="staff-univTitle">
+                    Образование:
+                  </span>
+                  <p class="staff-univP">
+                    Московский государственный медицинский университет имени
+                    И.М. Сеченова
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="staff-list">
+                  • Диагностика и лечение патологий органов зрения
+                  <br />
+                  • Рефракционная хирургия
+                  <br />
+                  • Блефаропластика
+                </p>
+                <span class="staff-list__blue">
+                  • Стаж работы <span>12 лет</span></span>
+              </div>
+              <button class="staff-info__btn">Записаться к врачу</button>
+            </div>
+            <div class="img-box">
+              <img class="staff-img" src="./assets/images/images/nurse-zari.webp" alt="nurse" />
+            </div>
+            <div class="certificateSwiper certificate-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+              <div class="arrow-left"></div>
+              <div class="cert-pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-card__info">
+              <h3 class="staff-name">Тальдаев Рустем Эмильевич</h3>
+              <span class="staff-occupation">Врач-офтальмохирург</span>
+
+              <div class="staff-edu">
+                <img class="staff-univImg" alt="univer-emblem" src="./assets/images/images/univer-emblem.webp" />
+                <div class="staff-univText">
+                  <span class="staff-univTitle">
+                    Образование:
+                  </span>
+                  <p class="staff-univP">
+                    Московский государственный медицинский университет имени
+                    И.М. Сеченова
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="staff-list">
+                  • Диагностика и лечение патологий органов зрения
+                  <br />
+                  • Рефракционная хирургия
+                  <br />
+                  • Блефаропластика
+                </p>
+                <span class="staff-list__blue">
+                  • Стаж работы <span>12 лет</span></span>
+              </div>
+              <button class="staff-info__btn">Записаться к врачу</button>
+            </div>
+            <div class="img-box">
+              <img class="staff-img" src="./assets/images/images/nurse-rus.webp" alt="nurse" />
+            </div>
+            <div class="certificateSwiper certificate-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+              <div class="arrow-left"></div>
+              <div class="cert-pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-card__info">
+              <h3 class="staff-name">Курачинова Зарина Арсеновна</h3>
+              <span class="staff-occupation">Врач-офтальмохирург</span>
+
+              <div class="staff-edu">
+                <img class="staff-univImg" alt="univer-emblem" src="./assets/images/images/univer-emblem.webp" />
+                <div class="staff-univText">
+                  <span class="staff-univTitle">
+                    Образование:
+                  </span>
+                  <p class="staff-univP">
+                    Московский государственный медицинский университет имени
+                    И.М. Сеченова
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="staff-list">
+                  • Диагностика и лечение патологий органов зрения
+                  <br />
+                  • Рефракционная хирургия
+                  <br />
+                  • Блефаропластика
+                </p>
+                <span class="staff-list__blue">
+                  • Стаж работы <span>12 лет</span></span>
+              </div>
+              <button class="staff-info__btn">Записаться к врачу</button>
+            </div>
+            <div class="img-box">
+              <img class="staff-img" src="./assets/images/images/nurse-zar.webp" alt="nurse" />
+            </div>
+            <div class="certificateSwiper certificate-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+                <div class="swiper-slide certificate-slide">
+                  <img class="cert-img" src="./assets/images/images/certificate.webp" />
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+              <div class="arrow-left"></div>
+              <div class="cert-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-us__bg">
       <div class="container">
-        <div class="header-navigation__nb">
-          <ul class="header-navigation__nav">
-            <li class="header-navigation__item header-navigation__home"></li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">О нас</a>
+        <div class="whyUs-box">
+          <div class="whyUs-text">
+            <h3 class="whyUs-text__h3">
+              Почему к нам приходят
+            </h3>
+            <h3 class="whyUs-text__h3">
+              по рекомендациям?
+            </h3>
+          </div>
+          <img src="./assets/images/images/whyUs-arrow.svg" alt="whyus-arrow" />
+        </div>
+        <div class="whyUs-facts">
+          <h2 class="whyUs-facts__title">
+            Интересы пациентов превыше интересов клиники
+          </h2>
+          <div class="whyUs-fact">
+            <img class="whyUs-fact__img" src="./assets/images/images/facts (2).webp" alt="whyUs" />
+            <p class="whyUs-fact__text">
+              План лечения всегда составляет
+              <span>в интересах пациента,</span> а не ради выгод клиники
+            </p>
+          </div>
+          <div class="whyUs-fact">
+            <img class="whyUs-fact__img" src="./assets/images/images/facts (1).webp" alt="whyUs" />
+            <p class="whyUs-fact__text">
+              <span>На первом месте именно лечение,</span>
+              помогаем людям и не воспринимаем лечение как услугу, хоть и
+              отношения между врачем и пациентом регламентируется законом
+            </p>
+          </div>
+          <div class="whyUs-fact">
+            <img class="whyUs-fact__img" src="./assets/images/images/facts (3).webp" alt="whyUs" />
+            <p class="whyUs-fact__text">
+              Мы не ограничены во времени в процессе лечения,
+              <span>уделяем пациенту столько внимания, сколько потребуется.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-grey">
+      <div class="tech-box container">
+        <img class="tech-box__img" src="./assets/images/images/instrument.webp" alt="tech-box" />
+        <div class="tech-box__text">
+          <h3 class="tech-box__title">Максимальная точность лечения</h3>
+          <div class="tech-box__subTitle">
+            <span class="tech-box__border"></span>
+            <span class="tech-box__span">Новейшее офтальмологическое оборудование</span>
+          </div>
+          <p class="tech-box__p">
+            • Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br />
+            <br />
+            • Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum."
+          </p>
+        </div>
+      </div>
+      <div class="quality-control__bg container">
+        <div class="flex-sb">
+          <div class="quality-control">
+            <h2 class="qc-h2">Постоянный контроль качества лечения</h2>
+            <div class="qc-box">
+              <img src="./assets/images/images/qc-btn.webp" alt="img" class="qc-box__img" />
+              <div>
+                <p class="qc-box__bt">
+                  Мировые стандарты лечения с пожизненной гарантией
+                  восстановления зрения
+                </p>
+                <p class="qc-box__rt">
+                  Успешно провели более 10 тысяч операций различной категории
+                  сложности
+                </p>
+              </div>
+            </div>
+            <div class="qc-box">
+              <img src="./assets/images/images/qc-btn.webp" alt="img" class="qc-box__img" />
+              <div>
+                <p class="qc-box__bt">
+                  Новейшее офтальмологическое оборудование ведущих мировых
+                  производителей,
+                </p>
+                <p class="qc-box__rt">
+                  которое обеспечивает 100% безопасность и результат
+                  проведения операции
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="time-box">
+            <img alt="time-box" src="./assets/images/images/Time Circle.webp" />
+            <span class="time-box__span">После лечения можно сравнить результаты</span>
+            <span class="time-box__brown">
+              до и после
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <img src="./assets/images/images/instr2.webp" alt="inst" class="qc-img" />
+      </div>
+    </section>
+    <section class="consult-box__bg">
+      <div class="container">
+        <h2 class="consult-box__title">
+          Для вас работают специалисты высшей категории
+        </h2>
+        <div class="consult-box">
+          <div class="consult-box__img">
+            <img alt="dots" src="./assets/images/images/“.webp" class="consult-box__img_dot" />
+            <img alt="consult images" src="./assets/images/images/doc.webp" class="consult-box__img_doc" />
+            <div class="consult-box__img_tab">
+              <div class="consult-box__tab_div">
+                <span class="consult-box__tab_span1">Яценко Олег</span>
+                <span class="consult-box__tab_span2">Врач офтальмолог-хирург</span>
+                <span class="consult-box__tab_span3">Врач офтальмолог-хирург</span>
+              </div>
+            </div>
+          </div>
+          <div class="consult-box__text">
+            <span class="consult-box__span">
+              Запишитесь на подробную консультацию-диагностику зрения
+            </span>
+            <p class="consult-box__p">
+              Введите ваш номер телефона в форме ниже и мы подберем удобное
+              время посещения
+            </p>
+            <div class="consult-inputBox">
+              <input type="number" class="consult-input" placeholder="+7 (489) 400-00-00" />
+              <button class="consult-btn">
+                ЗАПИСАТЬСЯ НА ПРИЁМ
+              </button>
+            </div>
+            <div class="flex">
+              <input type="checkbox" class="consult-check" />
+              <p class="consult-agreement__p">
+                Я принимаю условия<span>политики конфеденциальности</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="review-container container">
+        <div class="review-box">
+          <div class="review-textBox">
+            <h1 class="review-title">
+              Отзывы пациентов о
+              нашей клинике
+            </h1>
+            <span class="review-subtitle">
+              Лучшая награда для нас — благодарность наших пациентов!
+            </span>
+          </div>
+
+          <div class="review-btnBox">
+            <div class="review-btn">
+              <div class="review-btnInner">
+                <img alt="play-icon" src="./assets/images/images/play-btn.webp" />
+              </div>
+            </div>
+            <p class="review-btnText">
+              Нажмите на <span>кнопку плей </span>что-бы
+              посмотреть видеоотзывы пациентов
+            </p>
+          </div>
+        </div>
+        <div class="review-slider">
+          <div class="swiper reviewSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review-slide">
+                <div class="review-slide__box"
+                  style="background-image: url(./assets/images/temporary/slide\ \(1\).webp);">
+                  <div class="review-slide__btn">
+                    <div class="review-slide__btnInner">
+                      <img src="./assets/images/images/Polygon 1(2).webp" alt="play-btn">
+                    </div>
+                  </div>
+                  <div class="review-slide__textBox">
+                    <button class="review-slide__textBtn">Смотреть отзыв</button>
+                    <span>Алены Кулагиной</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-slide">
+                <div class="review-slide__box"
+                  style="background-image: url(/assets/images/temporary/slide\ \(2\).webp);">
+                  <div class="review-slide__btn">
+                    <div class="review-slide__btnInner">
+                      <img src="./assets/images/images/Polygon 1(2).webp" alt="play-btn">
+                    </div>
+                  </div>
+                  <div class="review-slide__textBox">
+                    <button class="review-slide__textBtn">Смотреть отзыв</button>
+                    <span>Альбины Галиевой</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-slide">
+                <div class="review-slide__box"
+                  style="background-image: url(/assets/images/temporary/image\ 43\(4\).webp);">
+                  <div class="review-slide__btn">
+                    <div class="review-slide__btnInner">
+                      <img src="./assets/images/images/Polygon 1(2).webp" alt="play-btn">
+                    </div>
+                  </div>
+                  <div class="review-slide__textBox">
+                    <button class="review-slide__textBtn">Смотреть отзыв</button>
+                    <span>Анатолия Геннадьевича</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-slide">
+                <div class="review-slide__box"
+                  style="background-image: url(/assets/images/temporary/slide\ \(3\).webp);">
+                  <div class="review-slide__btn">
+                    <div class="review-slide__btnInner">
+                      <img src="./assets/images/images/Polygon 1(2).webp" alt="play-btn">
+                    </div>
+                  </div>
+                  <div class="review-slide__textBox">
+                    <button class="review-slide__textBtn">Смотреть отзыв</button>
+                    <span>Димы Гаврилова</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-scrollBtn">
+              <div class="swiper-scrollbar review-scroll"></div>
+              <div class="review-nextPrev">
+                <div class="review-prev"></div>
+                <div class="review-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="often-questions container">
+        <div class="often-questions__text">
+          <h2 class="questions__title">Часто задаваемые вопросы</h2>
+          <p class="questions__p">
+            У вас остались вопросы? Получите косультацию специалиста
+          </p>
+          <div class="questions__imgBox">
+            <div class="questions__phoneBox">
+              <div class="questions__phoneBox_inner">
+                <div class="questions__phoneBox_innerContent">
+                  <img alt="phone" src="./assets/images/images/Calling.webp" />
+                </div>
+              </div>
+            </div>
+            <img class="questions__img" alt="doc-photo" src="./assets/images/images/docuestion.webp" />
+          </div>
+        </div>
+        <div class="often-accordion">
+          <ul class="accordion">
+            <li class="accordion-item is-active">
+              <h3 class="accordion-thumb">
+                Сколько времени занимает лазерная коррекция зрения?
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Услуги</a>
+
+            <li class="accordion-item">
+              <h3 class="accordion-thumb">
+                Есть ли ограничения по возрасту для лазерной коррекции зрения?
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Цены</a>
+
+            <li class="accordion-item">
+              <h3 class="accordion-thumb">
+                Лазерная коррекция зрения – это больно?
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Врачи</a>
+            <li class="accordion-item">
+              <h3 class="accordion-thumb">
+                Можно ли сразу после операции садиться за руль??
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Оборудование</a>
+            <li class="accordion-item">
+              <h3 class="accordion-thumb">
+                Можно ли проводить лазерную коррекцию зрения при беременности?
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Акции</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Отзывы</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Вакансии</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Вопросы и ответы</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Контакты</a>
+            <li class="accordion-item">
+              <h3 class="accordion-thumb">
+                На сколько хватает эффекта после лазерной коррекции зрения?
+              </h3>
+              <p class="accordion-panel">
+                Как правило, лазерная коррекция зрения проводится пациентам
+                старше 18 лет. До этого возраста глазное яблоко еще
+                формируется, может меняться рефракция. Поэтому юным пациентам
+                чаще назначается альтернативное лечение.
+              </p>
             </li>
           </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="bg-brown">
-        <div class="clinic-box container">
-          <div class="clinic-box__up">
-            <div class="info-clinic">
-              <h1 class="clinic-title">О нашей клинике</h1>
-              <h3 class="clinic-subTitle">
-                Стремимся вернуть вам здоровое зрение
-              </h3>
-              <p class="clinic-p">
-                Забота о вашем зрении – главная цель офтальмологии «eye clinic».
-                Мы предлагаем новейшие решения в диагностике и лечении глазных
-                заболеваний, чтобы вы могли видеть красоту окружающего мира во
-                всем его многообразии.
-                <br />
-                <br />
-                Офтальмология «eye clinic» является частью огромной сети клиник
-                «eye clinic» с многолетней историей, высококвалифицированными
-                специалистами и инновационным оборудованием. Наши пациенты
-                доверяют нам самое главное – свое здоровье и здоровье своих
-                детей. Мы ценим это доверие и стремимся совершенствовать свои
-                возможности, придерживаясь неизменно высокого качества.
-              </p>
+    </section>
+    <section>
+      <div class="footer-map" style="position:relative;overflow:hidden;">
+        <iframe src="https://yandex.uz/map-widget/v1/-/CCUVuPsooD" width="100%" height="760px" frameborder="0"
+          allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="container footer-map__contacts">
+          <div class="map-info">
+            <h3>Контакты</h3>
+            <div class="map-info__contacts">
+              <div class="map-info__img">
+                <img alt="img" src="./assets/images/svgs/Location.webp" />
+              </div>
+              <div class="map-info__text">
+                <span>Метро Народное Ополчение</span>
+                <p>пр-кт Маршала Жукова, д. 59</p>
+              </div>
             </div>
-            <div class="clinic-mark">
-              <img
-                class="mark-img"
-                alt="mark-img"
-                src="./assets/images/images/dart-mark.webp"
-              />
-              <div class="mark-textBox">
-                <p class="mark-p">
-                  Забота, профессионализм, вежливость и деликатность в работе с
-                  пациентами
-                </p>
-                <span class="mark-brown">— наша визитная карточка.</span>
+            <div class="map-info__contacts">
+              <div class="map-info__img">
+                <img alt="img" src="./assets/images/svgs/Call.webp" />
+              </div>
+              <div class="map-info__text">
+                <span>Info@eyeclinic</span>
+                <p>+7 (489) 400-00-00</p>
+              </div>
+            </div>
+            <div class="map-info__contacts">
+              <div class="map-info__img">
+                <img alt="img" src="./assets/images/svgs/Time.webp" />
+              </div>
+              <div class="map-info__text">
+                <span>Время работы:</span>
+                <p>ежедневно: 9:00 - 21:00</p>
+              </div>
+            </div>
+            <div class="map-info__btn">
+              <img src="./assets/images/images/yandex.webp" alt="btn-img" />
+              <div class="map-info__btn_text">
+                <span>Вызвать такси</span>
+                <p>пр-кт Маршала Жукова, д. 59</p>
               </div>
             </div>
           </div>
-          <div class="clinic-box__down">
-            <div class="mark-box">
-              <img
-                class="mark-box__img"
-                alt="mark-box"
-                src="./assets/images/images/certificate-circle.webp"
-              />
-              <h5 class="mark-box__title">
-                В ЦЕНТРЕ РАБОТАЮТ СПЕЦИАЛИСТЫ ВЫСОЧАЙШЕГО КЛАССА
-              </h5>
-              <p class="mark-box__info">
-                оперируют хирурги с мировым именем, стоявшие у истоков
-                современных операций по удалению катаракты и лазерной коррекции
-                зрения.
-              </p>
+          <div class="map-img">
+            <img src="./assets/images/images/footer-img.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer container">
+        <div class="footer-contact">
+          <div class="footer-logo">
+            <img src="./assets/images/images/logo.webp" />
+            <p>Цифровая глазная клиника в Москве</p>
+          </div>
+          <div class="footer-social">
+            <div class="footer-phone">
+              <img alt="phone" src="./assets/images/svgs/phone-footer.webp" />
+              <div class="footer-phone__text">
+                <span>
+                  +7 (489) 400-00-00
+                </span>
+                <p>
+                  ежедневно: 9:00 - 21:00
+                </p>
+              </div>
             </div>
-            <div class="mark-box">
-              <img
-                class="mark-box__img"
-                alt="mark-box"
-                src="./assets/images/images/eye-circle.webp"
-              />
-              <h5 class="mark-box__title">БОЛЕЕ 10 000 УСПЕШНЫХ ОПЕРАЦИЙ</h5>
-              <p class="mark-box__info">
-                Большинство из них самые сложнейшие, до недавнего времени не
-                выполняемые нигде в России.
-              </p>
-            </div>
-            <div class="mark-box">
-              <img
-                class="mark-box__img"
-                alt="mark-box"
-                src="./assets/images/images/microscope-circle.webp"
-              />
-              <h5 class="mark-box__title">ОБОРУДОВАНИЕ МИРОВОГО СТАНДАРТА</h5>
-              <p class="mark-box__info">
-                Центр оснащен самым современным оборудованием.
-              </p>
-            </div>
-            <div class="mark-box">
-              <img
-                class="mark-box__img"
-                alt="mark-box"
-                src="./assets/images/images/hand-circle (1).webp"
-              />
-              <h5 class="mark-box__title">Самые современные методики</h5>
-              <p class="mark-box__info">
-                Технология Фемто Супер Ласик, Супракор, фемтосекундное удаление
-                катаракты.
-              </p>
+            <div class="footer-social__img">
+              <img alt="img -social" src="./assets/images/svgs/instagram.webp" />
+              <img alt="img -social" src="./assets/images/svgs/youtube.webp" />
+              <img alt="img -social" src="./assets/images/svgs/facebook.webp" />
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="info-tabs container">
-        <div class="info-tab">
-          <h3 class="info-tab__title">
-            Проводим лечение в соответствии с мировыми стандартами офтальмологии
-          </h3>
-          <p class="info-tab__p">
-            За 7 лет успешно провели более 10 000 операций, в том числе наиболее
-            сложных при сопутствующих паталогиях
+        <div class="footer-nav">
+          <ul>
+            <li class="footer-link">
+              <a href="#">О клинике </a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Врачи</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Цены</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Вопросы и ответы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copywrite">
+          <p>
+            © 2022 Все права защищены
           </p>
-          <img
-            alt="info-tab"
-            class="info-tab__img"
-            src="./assets/images/images/1-tab.webp"
-          />
-        </div>
-        <div class="info-tab">
-          <h3 class="info-tab__title">Длительность операции менее 15 минут:</h3>
-          <p class="info-tab__p">
-            без болевых ощущений с гарантией восстановления остроты зрения до
-            100% реабилитация за 1 день
-          </p>
-          <img
-            alt="info-tab"
-            class="info-tab__img"
-            src="./assets/images/images/2-tab.webp"
-          />
-        </div>
-        <div class="info-tab">
-          <h3 class="info-tab__title">
-            Демократичные цены с беспроцентной рассрочкой
-          </h3>
-          <p class="info-tab__p">
-            Стоимость операции ниже на 15-20%, чем в среднем по Москве благодаря
-            прямому сотрудничеству с ведущими мировыми изготовителями
-            хрусталиков
-          </p>
-          <img
-            alt="info-tab"
-            class="info-tab__img"
-            src="./assets/images/images/3-tab.webp"
-          />
-        </div>
-      </section>
-      <section class="clinic-staff__bg">
-        <div class="clinic-staff container">
-          <div class="staff-infoTabs">
-            <div class="staff-info">
-              <h3 class="staff-title">Мы собрали команду профессионалов</h3>
-              <p class="staff-p">
-                В нашей клинике установлено инновационное, высокотехнологичное
-                оборудование. Оно позволяет проводить точную, безошибочную
-                диагностику глаз, а также эффективное, комфортное для пациента
-                лечение.
-              </p>
-              <p class="staff-span">
-                Мы прооперировали более 4000 пациентов.
-              </p>
-            </div>
-            <div class="staff-tabs">
-              <div class="staff-tab">
-                <img
-                  class="staff-tab__img"
-                  src="./assets/images/images/staff-tabs (1).webp"
-                />
-                <div>
-                  <span class="staff-tabTitle">Высокий профессионализм</span>
-                  <p class="staff-tabP">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
-                  </p>
-                </div>
-              </div>
-              <div class="staff-tab">
-                <img
-                  class="staff-tab__img"
-                  src="/assets/images/images/staff-tabs (2).webp"
-                />
-                <div>
-                  <span class="staff-tabTitle">Дружная команда</span>
-                  <p class="staff-tabP">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
-                  </p>
-                </div>
-              </div>
-              <div class="staff-tab">
-                <img
-                  class="staff-tab__img"
-                  src="/assets/images/images/staff-tabs (3).webp"
-                />
-                <div>
-                  <span class="staff-tabTitle">Забота о клиентах</span>
-                  <p class="staff-tabP">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="staff-box">
-            <h2 class="staff-title">
-              А теперь коротко о каждом специалисте:
-            </h2>
-
-            <div class="staff-card mt-60">
-              <div class="staff-card__info">
-                <h3 class="staff-name">Борзых Виктор Анатольевич</h3>
-                <span class="staff-occupation">Врач-офтальмохирург</span>
-
-                <div class="staff-edu">
-                  <img
-                    class="staff-univImg"
-                    alt="univer-emblem"
-                    src="/assets/images/images/univer-emblem.webp"
-                  />
-                  <div class="staff-univText">
-                    <span class="staff-univTitle">
-                      Образование:
-                    </span>
-                    <p class="staff-univP">
-                      Московский государственный медицинский университет имени
-                      И.М. Сеченова
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="staff-list">
-                    • Диагностика и лечение патологий органов зрения
-                    <br />
-                    • Рефракционная хирургия
-                    <br />
-                    • Блефаропластика
-                  </p>
-                  <span class="staff-list__blue">
-                    • Стаж работы <span>12 лет</span></span
-                  >
-                </div>
-                <button class="staff-info__btn">Записаться к врачу</button>
-              </div>
-              <div class="img-box">
-                <img
-                  class="staff-img"
-                  src="/assets/images/images/nurse 1(1).webp"
-                  alt="nurse"
-                />
-              </div>
-              <div class="certificateSwiper certificate-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                </div>
-                <div class="arrow-right"></div>
-                <div class="arrow-left"></div>
-                <div class="cert-pagination swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="staff-card">
-              <div class="staff-card__info">
-                <h3 class="staff-name">Курачинова Зарина Арсеновна</h3>
-                <span class="staff-occupation">Врач-офтальмохирург</span>
-
-                <div class="staff-edu">
-                  <img
-                    class="staff-univImg"
-                    alt="univer-emblem"
-                    src="/assets/images/images/univer-emblem.webp"
-                  />
-                  <div class="staff-univText">
-                    <span class="staff-univTitle">
-                      Образование:
-                    </span>
-                    <p class="staff-univP">
-                      Московский государственный медицинский университет имени
-                      И.М. Сеченова
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="staff-list">
-                    • Диагностика и лечение патологий органов зрения
-                    <br />
-                    • Рефракционная хирургия
-                    <br />
-                    • Блефаропластика
-                  </p>
-                  <span class="staff-list__blue">
-                    • Стаж работы <span>12 лет</span></span
-                  >
-                </div>
-                <button class="staff-info__btn">Записаться к врачу</button>
-              </div>
-              <div class="img-box">
-                <img
-                  class="staff-img"
-                  src="/assets/images/images/nurse-zari.webp"
-                  alt="nurse"
-                />
-              </div>
-              <div class="certificateSwiper certificate-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                </div>
-                <div class="arrow-right"></div>
-                <div class="arrow-left"></div>
-                <div class="cert-pagination swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="staff-card">
-              <div class="staff-card__info">
-                <h3 class="staff-name">Тальдаев Рустем Эмильевич</h3>
-                <span class="staff-occupation">Врач-офтальмохирург</span>
-
-                <div class="staff-edu">
-                  <img
-                    class="staff-univImg"
-                    alt="univer-emblem"
-                    src="/assets/images/images/univer-emblem.webp"
-                  />
-                  <div class="staff-univText">
-                    <span class="staff-univTitle">
-                      Образование:
-                    </span>
-                    <p class="staff-univP">
-                      Московский государственный медицинский университет имени
-                      И.М. Сеченова
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="staff-list">
-                    • Диагностика и лечение патологий органов зрения
-                    <br />
-                    • Рефракционная хирургия
-                    <br />
-                    • Блефаропластика
-                  </p>
-                  <span class="staff-list__blue">
-                    • Стаж работы <span>12 лет</span></span
-                  >
-                </div>
-                <button class="staff-info__btn">Записаться к врачу</button>
-              </div>
-              <div class="img-box">
-                <img
-                  class="staff-img"
-                  src="/assets/images/images/nurse-rus.webp"
-                  alt="nurse"
-                />
-              </div>
-              <div class="certificateSwiper certificate-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                </div>
-                <div class="arrow-right"></div>
-                <div class="arrow-left"></div>
-                <div class="cert-pagination swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="staff-card">
-              <div class="staff-card__info">
-                <h3 class="staff-name">Курачинова Зарина Арсеновна</h3>
-                <span class="staff-occupation">Врач-офтальмохирург</span>
-
-                <div class="staff-edu">
-                  <img
-                    class="staff-univImg"
-                    alt="univer-emblem"
-                    src="/assets/images/images/univer-emblem.webp"
-                  />
-                  <div class="staff-univText">
-                    <span class="staff-univTitle">
-                      Образование:
-                    </span>
-                    <p class="staff-univP">
-                      Московский государственный медицинский университет имени
-                      И.М. Сеченова
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="staff-list">
-                    • Диагностика и лечение патологий органов зрения
-                    <br />
-                    • Рефракционная хирургия
-                    <br />
-                    • Блефаропластика
-                  </p>
-                  <span class="staff-list__blue">
-                    • Стаж работы <span>12 лет</span></span
-                  >
-                </div>
-                <button class="staff-info__btn">Записаться к врачу</button>
-              </div>
-              <div class="img-box">
-                <img
-                  class="staff-img"
-                  src="/assets/images/images/nurse-zar.webp"
-                  alt="nurse"
-                />
-              </div>
-              <div class="certificateSwiper certificate-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                  <div class="swiper-slide certificate-slide">
-                    <img
-                      class="cert-img"
-                      src="/assets/images/images/certificate.webp"
-                    />
-                  </div>
-                </div>
-                <div class="arrow-right"></div>
-                <div class="arrow-left"></div>
-                <div class="cert-pagination swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="why-us__bg">
-        <div class="container">
-          <div class="whyUs-box">
-            <div class="whyUs-text">
-              <h3 class="whyUs-text__h3">
-                Почему к нам приходят
-              </h3>
-              <h3 class="whyUs-text__h3">
-                по рекомендациям?
-              </h3>
-            </div>
-            <img
-              src="/assets/images/images/whyUs-arrow.svg"
-              alt="whyus-arrow"
-            />
-          </div>
-          <div class="whyUs-facts">
-            <h2 class="whyUs-facts__title">
-              Интересы пациентов превыше интересов клиники
-            </h2>
-            <div class="whyUs-fact">
-              <img
-                class="whyUs-fact__img"
-                src="/assets/images/images/facts (2).webp"
-                alt="whyUs"
-              />
-              <p class="whyUs-fact__text">
-                План лечения всегда составляет
-                <span>в интересах пациента,</span> а не ради выгод клиники
-              </p>
-            </div>
-            <div class="whyUs-fact">
-              <img
-                class="whyUs-fact__img"
-                src="/assets/images/images/facts (1).webp"
-                alt="whyUs"
-              />
-              <p class="whyUs-fact__text">
-                <span>На первом месте именно лечение,</span>
-                помогаем людям и не воспринимаем лечение как услугу, хоть и
-                отношения между врачем и пациентом регламентируется законом
-              </p>
-            </div>
-            <div class="whyUs-fact">
-              <img
-                class="whyUs-fact__img"
-                src="/assets/images/images/facts (3).webp"
-                alt="whyUs"
-              />
-              <p class="whyUs-fact__text">
-                Мы не ограничены во времени в процессе лечения,
-                <span
-                  >уделяем пациенту столько внимания, сколько потребуется.</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bg-grey">
-        <div class="tech-box container">
-          <img
-            class="tech-box__img"
-            src="/assets/images/images/instrument.webp"
-            alt="tech-box"
-          />
-          <div class="tech-box__text">
-            <h3 class="tech-box__title">Максимальная точность лечения</h3>
-            <div class="tech-box__subTitle">
-              <span class="tech-box__border"></span>
-              <span class="tech-box__span"
-                >Новейшее офтальмологическое оборудование</span
-              >
-            </div>
-            <p class="tech-box__p">
-              • Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <br />
-              • Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum."
-            </p>
-          </div>
-        </div>
-        <div class="quality-control__bg container">
-          <div class="flex-sb">
-            <div class="quality-control">
-              <h2 class="qc-h2">Постоянный контроль качества лечения</h2>
-              <div class="qc-box">
-                <img
-                  src="/assets/images/images/qc-btn.webp"
-                  alt="img"
-                  class="qc-box__img"
-                />
-                <div>
-                  <p class="qc-box__bt">
-                    Мировые стандарты лечения с пожизненной гарантией
-                    восстановления зрения
-                  </p>
-                  <p class="qc-box__rt">
-                    Успешно провели более 10 тысяч операций различной категории
-                    сложности
-                  </p>
-                </div>
-              </div>
-              <div class="qc-box">
-                <img
-                  src="/assets/images/images/qc-btn.webp"
-                  alt="img"
-                  class="qc-box__img"
-                />
-                <div>
-                  <p class="qc-box__bt">
-                    Новейшее офтальмологическое оборудование ведущих мировых
-                    производителей,
-                  </p>
-                  <p class="qc-box__rt">
-                    которое обеспечивает 100% безопасность и результат
-                    проведения операции
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="time-box">
-              <img
-                alt="time-box"
-                src="/assets/images/images/Time Circle.webp"
-              />
-              <span class="time-box__span"
-                >После лечения можно сравнить результаты</span
-              >
-              <span class="time-box__brown">
-                до и после
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <img
-            src="/assets/images/images/instr2.webp"
-            alt="inst"
-            class="qc-img"
-          />
-        </div>
-      </section>
-      <section class="consult-box__bg">
-        <div class="container">
-          <h2 class="consult-box__title">
-            Для вас работают специалисты высшей категории
-          </h2>
-          <div class="consult-box">
-            <div class="consult-box__img">
-              <img
-                alt="dots"
-                src="/assets/images/images/“.webp"
-                class="consult-box__img_dot"
-              />
-              <img
-                alt="consult images"
-                src="/assets/images/images/doc.webp"
-                class="consult-box__img_doc"
-              />
-              <div class="consult-box__img_tab">
-                <div class="consult-box__tab_div">
-                  <span class="consult-box__tab_span1">Яценко Олег</span>
-                  <span class="consult-box__tab_span2"
-                    >Врач офтальмолог-хирург</span
-                  >
-                  <span class="consult-box__tab_span3"
-                    >Врач офтальмолог-хирург</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="consult-box__text">
-              <span class="consult-box__span">
-                Запишитесь на подробную консультацию-диагностику зрения
-              </span>
-              <p class="consult-box__p">
-                Введите ваш номер телефона в форме ниже и мы подберем удобное
-                время посещения
-              </p>
-              <div class="consult-inputBox">
-                <input
-                  type="number"
-                  class="consult-input"
-                  placeholder="+7 (489) 400-00-00"
-                />
-                <button class="consult-btn">
-                  ЗАПИСАТЬСЯ НА ПРИЁМ
-                </button>
-              </div>
-              <div class="flex">
-                <input type="checkbox" class="consult-check" />
-                <p class="consult-agreement__p">
-                  Я принимаю условия<span>политики конфеденциальности</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="often-questions container">
-          <div class="often-questions__text">
-            <h2 class="questions__title">Часто задаваемые вопросы</h2>
-            <p class="questions__p">
-              У вас остались вопросы? Получите косультацию специалиста
-            </p>
-            <div class="questions__imgBox">
-              <div class="questions__phoneBox">
-                <div class="questions__phoneBox_inner">
-                  <div class="questions__phoneBox_innerContent">
-                    <img alt="phone" src="/assets/images/images/Calling.webp" />
-                  </div>
-                </div>
-              </div>
-              <img
-                class="questions__img"
-                alt="doc-photo"
-                src="/assets/images/images/docuestion.webp"
-              />
-            </div>
-          </div>
-          <div class="often-accordion">
-            <ul class="accordion">
-              <li class="accordion-item is-active">
-                <h3 class="accordion-thumb">
-                  Сколько времени занимает лазерная коррекция зрения?
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-
-              <li class="accordion-item">
-                <h3 class="accordion-thumb">
-                  Есть ли ограничения по возрасту для лазерной коррекции зрения?
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-
-              <li class="accordion-item">
-                <h3 class="accordion-thumb">
-                  Лазерная коррекция зрения – это больно?
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-              <li class="accordion-item">
-                <h3 class="accordion-thumb">
-                  Можно ли сразу после операции садиться за руль??
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-              <li class="accordion-item">
-                <h3 class="accordion-thumb">
-                  Можно ли проводить лазерную коррекцию зрения при беременности?
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-              <li class="accordion-item">
-                <h3 class="accordion-thumb">
-                  На сколько хватает эффекта после лазерной коррекции зрения?
-                </h3>
-                <p class="accordion-panel">
-                  Как правило, лазерная коррекция зрения проводится пациентам
-                  старше 18 лет. До этого возраста глазное яблоко еще
-                  формируется, может меняться рефракция. Поэтому юным пациентам
-                  чаще назначается альтернативное лечение.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="footer-map" style="position:relative;overflow:hidden;">
-          <iframe
-            src="https://yandex.uz/map-widget/v1/-/CCUVuPsooD"
-            width="100%"
-            height="760px"
-            frameborder="0"
-            allowfullscreen="true"
-            style="position:relative;"
-          ></iframe>
-          <div class="container footer-map__contacts">
-            <div class="map-info">
-              <h3>Контакты</h3>
-              <div class="map-info__contacts">
-                <div class="map-info__img">
-                  <img alt="img" src="/assets/images/svgs/Location.webp" />
-                </div>
-                <div class="map-info__text">
-                  <span>Метро Народное Ополчение</span>
-                  <p>пр-кт Маршала Жукова, д. 59</p>
-                </div>
-              </div>
-              <div class="map-info__contacts">
-                <div class="map-info__img">
-                  <img alt="img" src="/assets/images/svgs/Call.webp" />
-                </div>
-                <div class="map-info__text">
-                  <span>Info@eyeclinic</span>
-                  <p>+7 (489) 400-00-00</p>
-                </div>
-              </div>
-              <div class="map-info__contacts">
-                <div class="map-info__img">
-                  <img alt="img" src="/assets/images/svgs/Time.webp" />
-                </div>
-                <div class="map-info__text">
-                  <span>Время работы:</span>
-                  <p>ежедневно: 9:00 - 21:00</p>
-                </div>
-              </div>
-              <div class="map-info__btn">
-                <img src="/assets/images/images/yandex.webp" alt="btn-img" />
-                <div class="map-info__btn_text">
-                  <span>Вызвать такси</span>
-                  <p>пр-кт Маршала Жукова, д. 59</p>
-                </div>
-              </div>
-            </div>
-            <div class="map-img">
-              <img src="/assets/images/images/footer-img.webp" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="footer container">
-          <div class="footer-contact">
-            <div class="footer-logo">
-              <img src="/assets/images/images/logo.webp" />
-              <p>Цифровая глазная клиника в Москве</p>
-            </div>
-            <div class="footer-social">
-              <div class="footer-phone">
-                <img alt="phone" src="/assets/images/svgs/phone-footer.webp" />
-                <div class="footer-phone__text">
-                  <span>
-                    +7 (489) 400-00-00
-                  </span>
-                  <p>
-                    ежедневно: 9:00 - 21:00
-                  </p>
-                </div>
-              </div>
-              <div class="footer-social__img">
-                <img
-                  alt="img -social"
-                  src="/assets/images/svgs/instagram.webp"
-                />
-                <img alt="img -social" src="/assets/images/svgs/youtube.webp" />
-                <img
-                  alt="img -social"
-                  src="/assets/images/svgs/facebook.webp"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="footer-nav">
+          <div class="copywrite-nav">
             <ul>
-              <li class="footer-link">
-                <a href="#">О клинике </a>
+              <li class="copywrite-link">
+                <a href="#">Политика конфиденциальности</a>
               </li>
-              <li class="footer-link">
-                <a href="#">Услуги</a>
+              <li class="copywrite-link">
+                <a href="#">Лицензия</a>
               </li>
-              <li class="footer-link">
-                <a href="#">Врачи</a>
-              </li>
-              <li class="footer-link">
-                <a href="#">Цены</a>
-              </li>
-              <li class="footer-link">
-                <a href="#">Отзывы</a>
-              </li>
-              <li class="footer-link">
-                <a href="#">Контакты</a>
-              </li>
-              <li class="footer-link">
-                <a href="#">Вопросы и ответы</a>
+              <li class="copywrite-link">
+                <a href="#">Пользовательское соглашение</a>
               </li>
             </ul>
           </div>
-          <div class="footer-copywrite">
-            <p>
-              © 2022 Все права защищены
-            </p>
-            <div class="copywrite-nav">
-              <ul>
-                <li class="copywrite-link">
-                  <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li class="copywrite-link">
-                  <a href="#">Лицензия</a>
-                </li>
-                <li class="copywrite-link">
-                  <a href="#">Пользовательское соглашение</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
-    <!-- SCRIPTS JS -->
-    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <!-- SCRIPTS JS -->
+  <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
