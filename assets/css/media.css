@@ -93,7 +93,10 @@
     }
 
     .service-tab {
+        border-radius: 10px;
         height: 200px;
+        background-size: cover;
+        background-position: center;
     }
 
     .service-tab__text_span {
@@ -264,15 +267,15 @@
         width: 65%;
     }
 
-    .consult-box__img {
-        width: 48%;
-    }
-
     .consult-btn {
         height: 80px;
         font-size: 16px;
         line-height: 18px;
         text-transform: capitalize;
+    }
+
+    .consult-box__img {
+        width: 48%;
     }
 
     .consult-box {
@@ -393,14 +396,17 @@
         font-size: 34px;
     }
 
+    .service-tab {
+        height: 160px;
+    }
+
     .service-tab__text_span {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
     .service-tab__text p {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .clinic-box__down {
@@ -441,13 +447,19 @@
         font-size: 32px;
     }
 
+    .consult-check {
+        width: 15px;
+        height: 15px;
+    }
+
     .consult-agreement__p {
-        font-size: 15px;
+        font-size: 13px;
+        margin-left: 5px;
     }
 
     .consult-agreement__p span {
         padding-left: 5px;
-        font-size: 15px;
+        font-size: 13px;
         display: contents;
     }
 
@@ -558,8 +570,9 @@
 
     .review-next,
     .review-prev {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
     }
 
     .questions__title {
@@ -578,6 +591,11 @@
         width: 100%;
         margin: 0;
         margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .footer-phone__text p {
+        font-size: 14px;
     }
 
     .footer-phone img {
@@ -618,7 +636,7 @@
         max-height: 290px !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url(../images/banner-mobile.png) !important;
+        background-image: url(../images/images/banner-mobile.png) !important;
     }
 
     .btn-arrow {
@@ -720,7 +738,7 @@
     .menu__mobile_button:after {
         display: block;
         position: absolute;
-        height: 4px;
+        height: 2px;
         width: 100%;
         background-color: #1e272e;
         border-radius: 6px;
@@ -739,7 +757,7 @@
     }
 
     .menu__mobile_button:before {
-        top: 0;
+        top: 3px;
     }
 
     .menu__mobile_button:after {
@@ -902,9 +920,10 @@
 }
 
 @media screen and (max-width: 425px) {
-    .clinic-box{
+    .clinic-box {
         margin-top: 40px;
     }
+
     .price-container {
         margin-top: 50px;
     }
@@ -1160,7 +1179,7 @@
     }
 
     .service-tab__text_span {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .diagnose-slide__text h1 {
@@ -1388,14 +1407,14 @@
     .contact-address {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin: 0;
     }
 
     .contact-phone {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin: 0;
     }
 
@@ -1412,7 +1431,6 @@
 
     .contact-title {
         font-size: 28px;
-        text-align: center;
     }
 
     .contact-info__title {
@@ -1744,14 +1762,24 @@
     }
 
     .consult-inputBox {
-        height: 60px;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
     }
 
     .consult-btn {
+        margin-top: 10px;
         height: 56px;
+        width: 100%;
+        padding: 17px;
+        font-size: 14px;
     }
 
     .consult-input {
+        width: 100%;
         flex: 1;
         font-family: "Inter";
         font-style: normal;
@@ -1960,7 +1988,7 @@
     }
 
     .why-us__bg {
-        margin-top: 0;
+        margin-top: 50px;
     }
 
     .whyUs-text__h3 {
@@ -2044,6 +2072,14 @@
         margin-left: 0;
     }
 
+    .service-tab__text_span i {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        background-image: url(../images/images/Arrow\ -\ Right.png);
+        background-size: cover;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -2060,13 +2096,13 @@
         background-size: cover;
     }
 
-    .service-tab__text_span {
+    /* .service-tab__text_span {
         font-size: 18px;
-    }
+    } */
 
-    .service-tab__text p {
+    /* .service-tab__text p {
         font-size: 12px;
-    }
+    } */
 
     .swiper-scrollbar-drag {
         width: 20px !important;
