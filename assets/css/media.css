@@ -332,12 +332,88 @@
 }
 
 @media screen and (max-width: 768px) {
+    .whyUs-fact__img {
+        width: 70px;
+        height: 70px
+    }
+
+    .services-clinic {
+        margin-top: 50px;
+    }
+
+    .services-clinic__title {
+        line-height: 90%;
+        font-size: 34px;
+    }
+
+    .service-tab__text_span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-tab__text p {
+        margin-top: 0;
+    }
+
+    .clinic-box__down {
+        margin-top: 40px;
+    }
+
+    .info-tabs {
+        margin-top: 50px;
+    }
+
+    .clinic-staff__bg {
+        margin-top: 50px;
+    }
+
+    .info-tab__title {
+        font-size: 20px;
+    }
+
+    .staff-span {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .staff-tab {
+        margin-top: 30px;
+    }
+
+    .whyUs-facts {
+        margin-top: 60px;
+    }
+
+    .qc-box__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .consult-box__title {
+        font-size: 32px;
+    }
+
+    .consult-agreement__p {
+        font-size: 15px;
+    }
+
+    .consult-agreement__p span {
+        padding-left: 5px;
+        font-size: 15px;
+        display: contents;
+    }
+
+    .consult-box {
+        border-radius: 20px;
+    }
+
     .header-topbar {
         display: none;
     }
 
     .mySwiper {
-        display: none;
+        /* display: none; */
     }
 
 
@@ -421,16 +497,106 @@
 }
 
 @media screen and (max-width: 650px) {
-    .about-us{
+    .review-btnText span {
+        font-size: 18px;
+    }
+
+    .review-btnText {
+        font-size: 18px;
+    }
+
+    .review-next,
+    .review-prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .questions__title {
+        font-size: 32px;
+    }
+
+    .footer-phone__text span {
+        font-size: 18px;
+    }
+
+    .footer-logo img {
+        width: 170px;
+    }
+
+    .footer-logo p {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .footer-phone img {
+        width: 50px;
+    }
+
+    .main-doc {
+        display: none;
+    }
+
+    .mobile-logo img {
+        width: 170px;
+    }
+
+    .main-tabs {
         margin-top: 30px;
     }
-    .accordion-panel{
+
+    .btn-blur {
+        width: 100%;
+        height: 105px;
+        backdrop-filter: unset;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .banner-btn {
+        position: unset;
+        font-size: 18px;
+        width: 90%;
+        height: 55%;
+        text-transform: unset;
+    }
+
+    .main-slider {
+        width: 100%;
+        left: unset;
+        padding: 20px;
+    }
+
+    .main-slider__title {
+        font-size: 36px;
+    }
+
+    .main-slider__subtitle {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        display: none;
+    }
+
+    .btn-next,
+    .btn-prev {
+        display: none;
+    }
+
+    .about-us {
+        margin-top: 30px;
+    }
+
+    .accordion-panel {
         padding: 0;
         margin-top: 10px;
     }
-    .mobile-logo{
+
+    .mobile-logo {
         display: flex;
     }
+
     .menu__mobile {
         display: flex;
         align-items: center;
@@ -470,7 +636,7 @@
     .menu__mobile_button:after {
         display: block;
         position: absolute;
-        height: 6px;
+        height: 4px;
         width: 100%;
         background-color: #1e272e;
         border-radius: 6px;
@@ -652,6 +818,10 @@
 }
 
 @media screen and (max-width: 425px) {
+    .certificate-slider {
+        display: none;
+    }
+
     .vacancy-box__title {
         margin-top: 20px;
     }
@@ -715,7 +885,7 @@
     }
 
     .service-listBox h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .service-list {
@@ -974,9 +1144,7 @@
         margin-top: 30px !important;
     }
 
-    .staff-card {
-        margin-top: 50px;
-    }
+
 
     .staff-title {
         font-size: 20px;
@@ -1216,12 +1384,25 @@
     }
 
     .staff-card {
-        padding: 10px 15px;
+        padding: 15px 20px;
         height: unset;
+        margin-top: 50px;
+        border-radius: 20px;
+        flex-direction: column-reverse;
     }
 
     .staff-img {
-        display: none;
+        width: 200px;
+        position: unset;
+
+        /* display: none; */
+    }
+
+    .img-box {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
     .certificate-slider {
@@ -1229,7 +1410,7 @@
     }
 
     .staff-name {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .staff-occupation {
@@ -1275,9 +1456,7 @@
         padding: 20px;
     }
 
-    .staff-card {
-        flex-direction: column;
-    }
+
 
     .main-tab__title {
         text-align: center;
@@ -1349,11 +1528,11 @@
     }
 
     .review-btnText {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .review-btnText span {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .review-btn {
@@ -1501,18 +1680,19 @@
     .copywrite-nav ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .copywrite-nav {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .footer-copywrite {
         flex-direction: column;
+        align-items: start;
     }
 
     .footer-link {
@@ -1524,11 +1704,12 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .footer-nav {
         height: unset;
+        margin-top: 15px;
     }
 
     .footer {
@@ -1540,29 +1721,37 @@
     .footer-contact {
         display: flex;
         flex-direction: column;
+        align-items: start;
         margin-top: 20px;
         height: unset;
+        border-color: transparent;
     }
 
     .footer-logo {
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
     }
 
     .footer-logo p {
         margin-top: 10px;
     }
 
+    .footer-copywrite p {
+        padding: 10px;
+    }
+
     .footer-social {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin-right: 20px;
     }
 
     .footer-social__img {
         margin: 0;
+        margin-top: 20px;
     }
 
     .footer-phone__text {
@@ -1657,7 +1846,7 @@
     }
 
     .clinic-title {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .clinic-box__up {
@@ -1850,13 +2039,6 @@
         flex-direction: column;
     }
 
-    .staff-card {
-        padding: 10px 15px;
-    }
-
-    .staff-img {
-        display: none;
-    }
 
     .certificate-slider {
         /* display: none */
@@ -1909,15 +2091,14 @@
         padding: 20px;
     }
 
-    .staff-card {
-        flex-direction: column;
-    }
+
 }
 
 @media screen and (max-width: 320px) {
-    .mobile-logo img{
+    .mobile-logo img {
         width: 170px;
     }
+
     .tech-box__img {
         max-width: 434px;
         height: 230px;

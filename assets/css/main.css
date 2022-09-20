@@ -346,6 +346,7 @@ body {
   position: relative;
   left: -20px;
   margin-top: 30px;
+  text-transform: capitalize;
 }
 
 .btn-blur {
@@ -641,6 +642,7 @@ a.fx-Revolve:focus:before {
 
 .grey {
   color: #00203399;
+  display: contents;
 }
 
 .services-clinic__subtitle {
