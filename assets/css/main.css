@@ -140,6 +140,10 @@ body {
   flex-direction: column;
 }
 
+.header-map {
+  display: none;
+}
+
 .topbar-regText {
   font-family: 'Inter';
   font-style: normal;
@@ -254,6 +258,7 @@ body {
   display: flex;
   align-items: center;
   padding: 18px 12px 18px 30px;
+  cursor: pointer;
 }
 
 .appointment-btn::before {
@@ -348,6 +353,7 @@ body {
   left: -20px;
   margin-top: 30px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-blur {
@@ -471,10 +477,11 @@ a.fx-Revolve:focus:before {
 .btn-prev {
   width: 108px;
   height: 112px;
-  z-index: 1;
+  z-index: 3;
   top: 50%;
   background-image: url(../images/svgs/bannerBtn.svg);
   transition: transform 1s linear;
+  cursor: pointer;
 }
 
 .btn-img {
@@ -498,9 +505,31 @@ a.fx-Revolve:focus:before {
   background-image: url(../images/temporary/btn-m.webp);
 }
 
+.logo-text {
+  display: none;
+  font-size: 15px;
+  color: #000;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+
+.disabled-header {
+  display: none !important;
+}
+
 .btn-next:hover,
 .btn-prev:hover {
   transform: rotate(180deg);
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  z-index: 100;
 }
 
 /* *************** SWIPER ************* */
@@ -1769,7 +1798,9 @@ a.fx-Revolve:focus:before {
   line-height: 160%;
   color: rgba(0, 32, 51, 0.6);
 }
-
+.mobile-logo{
+  display: none;
+}
 /* Active */
 .accordion-item.is-active .accordion-thumb::before {
   background-image: url(../images/svgs/-.webp);
@@ -4555,6 +4586,7 @@ a.fx-Revolve:focus:before {
 
 .display-none {
   display: none !important;
+  transition: 3s;
 }
 
 /* Comments */

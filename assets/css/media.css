@@ -77,11 +77,11 @@
     }
 
     .main-tab__title {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .main-tab__subtitle {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .services-clinic__title {
@@ -90,6 +90,7 @@
 
     .services-clinic__subtitle {
         font-size: 20px;
+        line-height: 20px;
     }
 
     .service-tab {
@@ -125,10 +126,12 @@
 
     .clinic-subTitle {
         font-size: 20px;
+        line-height: 24px;
     }
 
     .clinic-p {
         font-size: 14px;
+        color: rgba(8, 46, 67, 1.6);
     }
 
     .mark-box__title {
@@ -313,9 +316,10 @@
         height: 20px;
         width: 20px;
         transition: transform 0.2s ease-out;
-        position: relative;
-        left: -20px;
+        position: absolute;
+        left: 20px;
         background-size: cover;
+        margin-top: 3px;
     }
 
     .accordion-item {
@@ -335,6 +339,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .mySwiper {
         padding: 0 16px !important;
     }
@@ -397,7 +402,7 @@
     }
 
     .service-tab {
-        height: 160px;
+        height: 100%;
         padding: 20px 16px;
     }
 
@@ -468,9 +473,7 @@
         border-radius: 20px;
     }
 
-    .header-topbar {
-        display: none;
-    }
+
 
     .mySwiper {
         /* display: none; */
@@ -561,6 +564,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    .map-img {
+        display: none;
+    }
+
     .contact {
         margin-bottom: 30px;
     }
@@ -569,10 +576,18 @@
         margin-top: 30px !important;
     }
 
-    .accordion-thumb::before {
+    .accordion-thumb {
+        display: flex;
+    }
+
+    .accordion-thumb div {
+        margin-left: 10px;
+    }
+
+    /* .accordion-thumb::before {
         left: -5px;
         top: 2px;
-    }
+    } */
 
     .comments-container {
         flex-direction: column;
@@ -624,16 +639,19 @@
         display: none;
     }
 
-    .mobile-logo img {
+    .logo-eye {
         width: 170px;
+        height: 30px;
     }
 
     .main-tabs {
         margin-top: 30px;
     }
-    .about-us__text span{
+
+    .about-us__text span {
         margin-top: 15px;
     }
+
     .btn-blur {
         width: 100%;
         height: 50px;
@@ -695,6 +713,7 @@
         font-size: 12px;
         margin-top: 10px;
         width: 210px;
+        color: rgba(0, 32, 51, 1.6);
     }
 
     .btn-box {
@@ -712,7 +731,7 @@
 
     .accordion-thumb {
         padding: 0;
-        padding-left: 5px;
+        padding-left: 20px;
     }
 
     .accordion-panel {
@@ -721,7 +740,7 @@
     }
 
     .mobile-logo {
-        display: flex;
+        display: none;
     }
 
     .menu__mobile {
@@ -765,7 +784,7 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background-color: #1e272e;
+        background-color: #DABD95;
         border-radius: 6px;
         opacity: 1;
     }
@@ -945,6 +964,175 @@
 }
 
 @media screen and (max-width: 425px) {
+    .service-tab__text {
+        width: 66%;
+    }
+
+    .header-topbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        width: 170px;
+        align-items: end;
+    }
+
+    .topbar-text {
+        flex-direction: column-reverse;
+    }
+
+    .topbar-boldText {
+        line-height: 110%;
+    }
+
+    .header-logo {
+        text-decoration: none;
+    }
+
+    .logo-text {
+        display: flex;
+        font-size: 15px;
+        color: #071141;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    .topbar-img {
+        display: none;
+    }
+
+    .topbar-info {
+        min-width: unset;
+        display: none;
+        text-align: end;
+    }
+
+    .topbar-phone {
+        display: flex;
+    }
+
+    .appointment-btn {
+        height: 20px;
+        font-size: 15px;
+        background: none;
+        color: #DABD95;
+        box-shadow: none;
+        padding: 0;
+        text-decoration: underline;
+        width: 120px;
+    }
+
+    .appointment-btn__icon {
+        display: none;
+    }
+
+    .header-logo img {
+        width: 150px;
+    }
+
+    .map-widget-layout-view__maps-links {
+        display: none !important;
+    }
+
+    .mobile-logo {
+        position: absolute;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        /* display: none; */
+    }
+
+    .logo-phone {
+        width: 50px;
+    }
+
+    .footer-map {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+
+    .footer-map__contacts {
+        padding: 0 16px;
+        margin-top: -60px;
+    }
+
+    .map-info {
+        height: 100%;
+        margin: 0 16px;
+        margin: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        padding: 20px 25px;
+        margin-top: 20px;
+        box-shadow: none;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255, 220, 173, 1) 0%, rgba(250, 200, 131, 0.71) 100%);
+    }
+
+    .map-info__btn {
+        margin-top: 20px;
+    }
+
+    .map-info h3 {
+        font-size: 22px;
+    }
+
+    .map-info__btn_text span {
+        font-size: 16px;
+    }
+
+    .map-info__btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map-info__btn {
+        width: 100%;
+        margin-top: 20px;
+        height: 60px;
+        background: #fcd700;
+        border-radius: 10px;
+        padding: 10px 16px;
+        display: flex;
+    }
+
+    .map-info__btn_text p {
+        font-size: 14px;
+    }
+
+    .map-info__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map-info__img img {
+        width: 25px;
+    }
+
+    .map-info__text span {
+        font-size: 14px;
+    }
+
+    .map-info__text p {
+        font-size: 16px;
+    }
+
+    .map-info__contacts {
+        margin-top: 15px;
+    }
+
+    .footer-map__iframe {
+        height: 390px;
+    }
+
     .clinic-box {
         margin-top: 40px;
     }
@@ -1149,6 +1337,7 @@
         width: 100%;
         padding: 10px;
         justify-content: center;
+        border-radius: 20px;
     }
 
     .leave-review__title {
@@ -1161,10 +1350,14 @@
 
     .leave-review {
         padding: 20px;
+        border-radius: 10px;
     }
 
     .leave-review__text {
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .leave-review img {
@@ -1669,15 +1862,25 @@
 
     .main-tabs {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mt-50 {
+        margin-top: 15px !important;
     }
 
     .main-tab {
-        width: 100%;
+        width: 50%;
     }
 
     .qc-h2 {
         font-size: 28px;
+    }
+
+    .consult-box__bg {
+        margin-top: 30px;
     }
 
     .time-box {
@@ -1685,6 +1888,8 @@
         position: unset;
         margin-top: 20px;
         margin-bottom: 20px;
+        justify-content: unset;
+        height: 300px;
     }
 
     .quality-control {
@@ -1698,6 +1903,7 @@
     .quality-control__bg {
         background: none;
         height: unset;
+        padding-top: 50px;
     }
 
     .qc-img {
@@ -1847,6 +2053,7 @@
     }
 
     .often-questions {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
     }
@@ -1885,7 +2092,7 @@
     }
 
     .copywrite-link {
-        padding: 10px;
+        padding: 5px;
     }
 
     .copywrite-nav ul {
@@ -1907,7 +2114,7 @@
     }
 
     .footer-link {
-        padding: 10px;
+        padding: 5px;
     }
 
     .footer-nav ul {
@@ -1975,12 +2182,14 @@
     .tech-box__img {
         max-width: 434px;
         height: 295px;
-        top: -50px;
+        top: 0;
     }
 
     .tech-box {
         display: flex;
         flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
     }
 
     .whyUs-facts__title {
@@ -2018,6 +2227,7 @@
 
     .whyUs-text__h3 {
         font-size: 24px;
+        margin-top: 10px;
     }
 
     .whyUs-box img {
@@ -2026,8 +2236,12 @@
         margin-top: 30px;
     }
 
+    .bg-grey {
+        padding: 30px 16px;
+    }
+
     .whyUs-box {
-        height: 200px;
+        height: 180px;
         padding-top: 20px;
     }
 
@@ -2043,9 +2257,6 @@
         flex-direction: column;
     }
 
-    .main-tab {
-        width: 100%;
-    }
 
 
     .service-tabs {
@@ -2066,19 +2277,27 @@
 
     .clinic-mark {
         margin-top: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .clinic-box__down {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 0;
     }
 
     .mark-box {
-        width: 100%;
+        margin-top: 15px;
+        width: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+    }
+
+    .mb-100 {
+        margin-bottom: 50px !important;
     }
 
     .mark-box__title {
@@ -2105,6 +2324,39 @@
         background-size: cover;
     }
 
+    .header-map {
+        display: flex;
+        width: 100%;
+        position: absolute;
+    }
+
+    .header-map__img {
+        width: 40px;
+    }
+
+    .header-map__text {
+        width: 207px;
+        margin-left: 10px;
+    }
+
+    .map-regText {
+        font-size: 14px;
+    }
+
+    .main-tab__box {
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+    }
+
+    .main-tab__box img {
+        width: 70px;
+        left: unset !important;
+    }
+
+    .active-header {
+        display: flex !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -2314,14 +2566,14 @@
 }
 
 @media screen and (max-width: 320px) {
-    .mobile-logo img {
+    .logo-eye {
         width: 170px;
     }
 
     .tech-box__img {
         max-width: 434px;
         height: 230px;
-        top: -50px;
+        top: unset;
     }
 
     .clinic-box__down {

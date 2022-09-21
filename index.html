@@ -18,6 +18,7 @@
     <div class="header-topbar">
       <a href="/" class="header-logo">
         <img src="./assets/images/images/logo.webp" alt="logo">
+        <span class="logo-text">Глазная клиника</span>
       </a>
       <div class="topbar-info">
         <img class="topbar-img" src="./assets/images/images/Location.webp">
@@ -26,26 +27,36 @@
           <span class="topbar-boldText">пр-кт Маршала Жукова, д. 59</span>
         </div>
       </div>
-      <div class="topbar-info">
-        <img class="topbar-img" src="./assets/images/images/Phone.webp">
-        <div class="topbar-text">
-          <span class="topbar-regText">ежедневно: 9:00 - 21:00</span>
-          <span class="topbar-boldText">+7 (489) 400-00-00</span>
+      <div class="header-flex">
+        <div class="topbar-info topbar-phone">
+          <img class="topbar-img" src="./assets/images/images/Phone.webp">
+          <div class="topbar-text">
+            <span class="topbar-regText">ежедневно: 9:00 - 21:00</span>
+            <span class="topbar-boldText">+7 (489) 400-00-00</span>
+          </div>
         </div>
+        <button class="appointment-btn">Запись на приём
+          <span class="appointment-btn__icon">
+            <img src="./assets/images/svgs/arrow-right-header.png" alt="icon">
+          </span>
+        </button>
       </div>
-      <button class="appointment-btn">Запись на приём
-        <span class="appointment-btn__icon">
-          <img src="./assets/images/svgs/arrow-right-header.png" alt="icon">
-        </span>
-      </button>
     </div>
   </div>
   <header class="header">
     <div class="container">
       <nav class="header-navigation">
         <a href="/" class="mobile-logo">
-          <img src="./assets/images/images/logo.webp" alt="logo">
+          <img class="logo-eye" src="./assets/images/images/logo.webp" alt="logo">
+          <img class="logo-phone" src="./assets/images/images/Phone.webp">
         </a>
+        <div class="topbar-info header-map">
+          <img class="header-map__img" src="./assets/images/images/Location.webp">
+          <div class="topbar-text header-map__text">
+            <span class="topbar-regText">Метро Народное Ополчение</span>
+            <span class="topbar-boldText map-regText">пр-кт Маршала Жукова, д. 59</span>
+          </div>
+        </div>
         <a href="#" class="menu__mobile_button">
           <span></span>
         </a>
@@ -808,7 +819,7 @@
               </button>
             </div>
             <div class="flex">
-              <input type="checkbox" class="consult-check" checked/>
+              <input type="checkbox" class="consult-check" checked />
               <p class="consult-agreement__p">
                 Я принимаю условия <span>политики конфеденциальности</span>
               </p>
@@ -935,7 +946,7 @@
           <ul class="accordion">
             <li class="accordion-item is-active">
               <h3 class="accordion-thumb">
-                Сколько времени занимает лазерная коррекция зрения?
+                <div>Сколько времени занимает лазерная коррекция зрения?</div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -947,7 +958,9 @@
 
             <li class="accordion-item">
               <h3 class="accordion-thumb">
-                Есть ли ограничения по возрасту для лазерной коррекции зрения?
+                <div>
+                  Есть ли ограничения по возрасту для лазерной коррекции зрения?
+                </div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -959,7 +972,9 @@
 
             <li class="accordion-item">
               <h3 class="accordion-thumb">
-                Лазерная коррекция зрения – это больно?
+                <div>
+                  Лазерная коррекция зрения – это больно?
+                </div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -970,7 +985,9 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-thumb">
-                Можно ли сразу после операции садиться за руль??
+                <div>
+                  Можно ли сразу после операции садиться за руль??
+                </div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -981,7 +998,9 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-thumb">
-                Можно ли проводить лазерную коррекцию зрения при беременности?
+                <div>
+                  Можно ли проводить лазерную коррекцию зрения при беременности?
+                </div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -992,7 +1011,9 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-thumb">
-                На сколько хватает эффекта после лазерной коррекции зрения?
+                <div>
+                  На сколько хватает эффекта после лазерной коррекции зрения?
+                </div>
               </h3>
               <p class="accordion-panel">
                 Как правило, лазерная коррекция зрения проводится пациентам
@@ -1007,8 +1028,8 @@
     </section>
     <section>
       <div class="footer-map" style="position:relative;overflow:hidden;">
-        <iframe src="https://yandex.uz/map-widget/v1/-/CCUVuPsooD" width="100%" height="760px" frameborder="0"
-          allowfullscreen="true" style="position:relative;"></iframe>
+        <iframe class="footer-map__iframe" src="https://yandex.uz/map-widget/v1/-/CCUVuPsooD" width="100%"
+          height="760px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
         <div class="container footer-map__contacts">
           <div class="map-info">
             <h3>Контакты</h3>
