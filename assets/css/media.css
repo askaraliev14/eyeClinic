@@ -2476,7 +2476,18 @@
 }
 
 @media screen and (max-width: 375px) {
-
+    .modal-title__h3 {
+        font-size: 26px;
+    }
+    .modal-title__p{
+        font-size: 14px;
+    }
+    .modal-btn{
+        font-size: 14px;
+    }
+    .modal-checkbox p{
+        font-size: 12px;
+    }
     .service-tab {
         padding: 20px 10px;
     }
