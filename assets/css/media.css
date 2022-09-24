@@ -126,7 +126,7 @@
 
     .clinic-subTitle {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 22px;
     }
 
     .clinic-p {
@@ -756,7 +756,7 @@
         width: 35px;
         cursor: pointer;
         background-color: transparrent;
-        top: 25px;
+        top: 15px;
         right: 20px;
     }
 
@@ -810,7 +810,7 @@
 
     .header {
         height: 100%;
-        min-height: 80px;
+        min-height: 60px;
     }
 
     .header-navigation {
@@ -964,6 +964,116 @@
 }
 
 @media screen and (max-width: 425px) {
+    .oppor-mark {
+        margin-top: 30px;
+    }
+
+    .modal-window__backdrop {
+        display: none;
+    }
+
+    .modal-close__icon {
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 30px;
+        background-image: url(../images/svgs/Arrow\ -\ Left.png);
+        right: unset;
+    }
+
+    .modal-window {
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        max-width: unset;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        padding-top: 80px;
+        height: 100vh;
+    }
+
+    .modal-window__title {
+        border-top: 1px solid #EDEDED;
+        padding: 0 16px;
+        padding-top: 20px;
+    }
+
+    .modal-window__body {
+        padding: 0 16px;
+    }
+
+    .modal-window__footer {
+        padding: 0 16px;
+        margin-top: 20px;
+    }
+
+    .modal-input {
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .modal-input__icon_profile,
+    .modal-input__icon_phone {
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .modal-input__phone,
+    .modal-input__name {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .modal-btn {
+        height: 60px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .modal-window__body {
+        margin-top: 0;
+    }
+
+    .modal-input__phone::placeholder,
+    .modal-input__name::placeholder {
+        font-size: 14px;
+    }
+
+    .modal-checkbox p {
+        font-size: 14px;
+    }
+
+    .modal-title__h3 {
+        font-size: 30px;
+    }
+
+    .modal-title__p {
+        font-size: 16px;
+    }
+
+    .modal-window__title {
+        height: unset;
+    }
+
+    .price-accordion__content {
+        padding: 0;
+    }
+
+    .price-accordion__head {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .service-lists {
+        margin-top: 30px;
+    }
+
     .service-tab__text {
         width: 66%;
     }
@@ -1059,7 +1169,7 @@
 
     .footer-map__contacts {
         padding: 0 16px;
-        margin-top: -60px;
+        margin-top: 0px;
     }
 
     .map-info {
@@ -1378,9 +1488,11 @@
 
     .service-box__text span {
         font-size: 18px;
+        line-height: 120%;
     }
 
     .service-box__text p {
+        margin-top: 15px;
         font-size: 16px;
     }
 
@@ -1645,6 +1757,7 @@
         margin-top: 30px;
         width: 100%;
         flex: unset;
+        height: 100%;
     }
 
     .contact-title {
@@ -1672,6 +1785,7 @@
     }
 
     .about-cert__text p {
+        margin-top: 10px;
         font-size: 18px;
     }
 
@@ -1685,7 +1799,9 @@
     }
 
     .award-box__text p {
+        margin-top: 10px;
         font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .oppor-title h3 {
@@ -2156,7 +2272,7 @@
     }
 
     .footer-copywrite p {
-        padding: 10px;
+        padding: 5px;
     }
 
     .footer-social {

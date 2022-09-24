@@ -35,7 +35,7 @@
             <span class="topbar-boldText">+7 (489) 400-00-00</span>
           </div>
         </div>
-        <button class="appointment-btn">Запись на приём
+        <button class="appointment-btn js-modal" data-modal="#modal_1">Запись на приём
           <span class="appointment-btn__icon">
             <img src="./assets/images/svgs/arrow-right-header.png" alt="icon">
           </span>
@@ -112,7 +112,7 @@
             и лечении глазных заболеваний, чтобы вы могли видеть красоту окружающего мира во всем его многообразии.
           </p>
           <div class="btn-blur">
-            <button class="banner-btn">Запишитесь на прием
+            <button class="banner-btn js-modal" data-modal="#modal_1">Запишитесь на прием
               <span class="btn-arrow"></span>
             </button>
           </div>
@@ -137,7 +137,7 @@
             и лечении глазных заболеваний, чтобы вы могли видеть красоту окружающего мира во всем его многообразии.
           </p>
           <div class="btn-blur">
-            <button class="banner-btn">Запишитесь на прием
+            <button class="banner-btn js-modal" data-modal="#modal_1">Запишитесь на прием
               <span class="btn-arrow"></span>
             </button>
           </div>
@@ -162,7 +162,7 @@
             и лечении глазных заболеваний, чтобы вы могли видеть красоту окружающего мира во всем его многообразии.
           </p>
           <div class="btn-blur">
-            <button class="banner-btn">Запишитесь на прием
+            <button class="banner-btn js-modal" data-modal="#modal_1">Запишитесь на прием
               <span class="btn-arrow"></span>
             </button>
           </div>
@@ -1144,6 +1144,47 @@
       </div>
     </section>
   </main>
+  <!-- modal -->
+  <div id="modal_1" class="modal-window">
+    <div class="modal-window__title">
+      <h3 class="modal-title__h3">Консультация
+        специалиста</h3>
+      <p class="modal-title__p">Наш специалист свяжется с вами в течение 5 минут в рабочее время клиники</p>
+      <a href="#" class="modal-close modal-close__icon"></a>
+    </div>
+    <div class="modal-window__body">
+      <div class="modal-input">
+        <i class="modal-input__icon_profile"></i>
+        <input type="text" class="modal-input__name" placeholder="Имя">
+      </div>
+      <div class="modal-input">
+        <i class="modal-input__icon_phone"></i>
+        <input type="text" class="modal-input__phone" placeholder="Номер">
+      </div>
+    </div>
+    <div class="modal-window__footer">
+      <div class="modal-btn modal-close js-modal" data-modal="#modal_2">ЗАПИШИТЕСЬ НА ПРИЁМ</div>
+      <div class="modal-checkbox">
+        <input type="checkbox">
+        <p>Я принимаю условия политики конфеденциальности</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal_2" class="modal-window">
+    <div class="modal-window__title">
+      <h3 class="modal-title__h3">Спасибо заявка
+        отправлена</h3>
+      <p class="modal-title__p">Наш специалист свяжется с вами в течение 5 минут в рабочее время клиники</p>
+      <a href="#" class="modal-close__icon modal-close"></a>
+    </div>
+    <div class="modal-window__imgs">
+      <img src="./assets/images/images/instagram.png" alt="inst" class="modal-img">
+      <img src="./assets/images/images/youtube.png" alt="inst" class="modal-img">
+      <img src="./assets/images/images/facebook.png" alt="inst" class="modal-img">
+    </div>
+  </div>
+  <!-- modal end-->
+  <div class="modal-window__backdrop hidden" id="modal-backdrop"></div>
   <!-- SCRIPTS JS -->
   <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

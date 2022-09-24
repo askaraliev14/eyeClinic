@@ -1798,9 +1798,11 @@ a.fx-Revolve:focus:before {
   line-height: 160%;
   color: rgba(0, 32, 51, 0.6);
 }
-.mobile-logo{
+
+.mobile-logo {
   display: none;
 }
+
 /* Active */
 .accordion-item.is-active .accordion-thumb::before {
   background-image: url(../images/svgs/-.webp);
@@ -4590,3 +4592,223 @@ a.fx-Revolve:focus:before {
 }
 
 /* Comments */
+/* MODAL */
+/* .wrap-center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  text-align: center;
+  height: 100vh;
+} */
+
+.modal-window {
+  position: fixed;
+  z-index: 102;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%) scale(0.9);
+  width: 710px;
+  min-height: 560px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.18s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  padding: 50px 80px;
+  border-radius: 40px;
+}
+
+.modal-window.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-window__title {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.modal-open {
+  position: fixed;
+  overflow: hidden;
+}
+
+.modal-window__body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-window__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+}
+
+.modal-close__icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/svgs/modal-close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-title__h3 {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 110%;
+  text-align: center;
+  color: #071141;
+}
+
+.modal-title__p {
+  margin-top: 20px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(0, 32, 51, 0.6);
+}
+
+.modal-input__phone,
+.modal-input__name {
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  height: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 32, 51, 1.6);
+  padding-left: 30px;
+}
+
+.modal-input__phone::placeholder,
+.modal-input__name::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.modal-input__phone:focus,
+.modal-input__name:focus {
+  outline: none;
+}
+
+.modal-input__phone {}
+
+.modal-input {
+  width: 100%;
+  height: 92px;
+  border-radius: 20px;
+  display: flex;
+  border: 1px solid #BDBDBD;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.modal-input:focus {
+  border-color: #DABD95;
+}
+
+.modal-input__icon_profile {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/svgs/ProfileModal.svg);
+  background-position: center;
+}
+
+.modal-input__icon_phone {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/svgs/CallModal.svg);
+  background-position: center;
+}
+
+.modal-window__footer {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.modal-btn {
+  width: 100%;
+  height: 100px;
+  background: #DABD95;
+  box-shadow: inset 0px -6px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-checkbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-checkbox p {
+  padding-left: 10px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #BDBDBD;
+}
+
+.modal-window__imgs {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* MODAL */

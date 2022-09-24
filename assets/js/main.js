@@ -271,3 +271,93 @@ $(window).resize(function () {
 if ($(".menu__mobile_button").hasClass("active")) {
   $(this).find('.mobile-logo').addClass('display-none');
 }
+(function () {
+  "use strict";
+
+  const backdrop = document.querySelector('#modal-backdrop');
+  document.addEventListener('click', modalHandler);
+
+  function modalHandler(evt) {
+    const modalBtnOpen = evt.target.closest('.js-modal');
+    if (modalBtnOpen) { // open btn click
+      const modalSelector = modalBtnOpen.dataset.modal;
+      showModal(document.querySelector(modalSelector));
+    }
+
+    const modalBtnClose = evt.target.closest('.modal-close');
+    if (modalBtnClose) { // close btn click
+      evt.preventDefault();
+      hideModal(modalBtnClose.closest('.modal-window'));
+    }
+
+    if (evt.target.matches('#modal-backdrop')) { // backdrop click
+      hideModal(document.querySelector('.modal-window.show'));
+    }
+  }
+
+  function showModal(modalElem) {
+    modalElem.classList.add('show');
+    backdrop.classList.remove('hidden');
+  }
+
+  function hideModal(modalElem) {
+    modalElem.classList.remove('show');
+    backdrop.classList.add('hidden');
+  }
+})();
+const modal = document.querySelector("modal-window");
+const body = document.querySelector("body");
+
+const showModal = function (e) {
+  modal.classList.toggle("show");
+
+  if (!modal.classList.contains("show")) {
+    // Disable scroll
+    body.style.overflow = "hidden";
+  } else {
+    // Enable scroll
+    body.style.overflow = "auto";
+  }
+};
+
+$(".js-modal").click(function () {
+  $('body').addClass('modal-open');
+})
+$(".modal-close").click(function () {
+  $('body').removeClass('modal-open');
+})
+// $('#modal_1').modal().on('shown', function () {
+//   $('body').css('overflow', 'hidden');
+// }).on('hidden', function () {
+//   $('body').css('overflow', 'auto');
+// })
+
+// $("#modal_1").on("show", function () {
+//   $(document.body).addClass("modal-open");
+// }).on("hidden", function () {
+//   $("body").removeClass("modal-open")
+// });
+
+
+// $("#modal_2").on("show", function () {
+//   $("body").addClass("modal-open");
+// }).on("hidden", function () {
+//   $("body").removeClass("modal-open")
+// });
+// var modal2 = false;
+// $('#modal_1').on('hidden.bs.modal', function () {
+//   if (modal2) {
+//     $('#modal_2').modal('show');
+//     modal2 = false;
+//   }
+// });
+
+// $("#modal_2").click(function () {
+//   $('#modal_1').modal('hide');
+//   modal2 = true;
+// });
+// function activeModal {
+//   const modalOne = document.querySelector('#modal_1');
+//   const modalTwo = document.querySelector('#modal_2');
+//   if (modalOne )
+// }
