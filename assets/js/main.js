@@ -323,20 +323,32 @@ const showModal = function (e) {
 $(".js-modal").click(function () {
   $('body').addClass('modal-open');
 })
+$(".js-modal").click(function () {
+  $('.mySwiper').addClass('display-none');
+})
 $(".modal-close").click(function () {
   $('body').removeClass('modal-open');
 })
-// $('#modal_1').modal().on('shown', function () {
-//   $('body').css('overflow', 'hidden');
-// }).on('hidden', function () {
-//   $('body').css('overflow', 'auto');
-// })
-
-// $("#modal_1").on("show", function () {
-//   $(document.body).addClass("modal-open");
-// }).on("hidden", function () {
-//   $("body").removeClass("modal-open")
+$(".modal-close").click(function () {
+  $('.mySwiper').removeClass('display-none');
+})
+// if ($("#modal_1").hasClass("show")) {
+//   $("body").addClass("modal-open");
+// }
+// $(".modal-window").each(function () {
+//   if ($(this).hasClass('show')) {
+//     $('body').addClass('modal-open');
+//   }
 // });
+// $("#modal_1").on("show", function () {
+//   $('body').addClass("modal-open");
+// });
+// $(document).ready(function () {
+//   if ($("#modal_1").hasClass("show")) {}
+// });
+// $(".modal-window").on("show", function () {
+//   $('body').addClass("modal-open");
+// })
 
 
 // $("#modal_2").on("show", function () {
