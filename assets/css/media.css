@@ -978,7 +978,7 @@
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
-        top: 30px;
+        top: 20px;
         background-image: url(../images/svgs/Arrow\ -\ Left.png);
         right: unset;
     }
@@ -2479,15 +2479,19 @@
     .modal-title__h3 {
         font-size: 26px;
     }
-    .modal-title__p{
+
+    .modal-title__p {
         font-size: 14px;
     }
-    .modal-btn{
+
+    .modal-btn {
         font-size: 14px;
     }
-    .modal-checkbox p{
+
+    .modal-checkbox p {
         font-size: 12px;
     }
+
     .service-tab {
         padding: 20px 10px;
     }
