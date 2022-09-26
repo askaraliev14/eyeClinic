@@ -129,6 +129,20 @@ var swiper5 = new Swiper(".reviewSlider", {
   slidesPerView: 4,
   spaceBetween: 16,
   loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
   scrollbar: {
     el: ".review-scroll",
     hide: true,

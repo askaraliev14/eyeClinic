@@ -1,10 +1,45 @@
 @media(max-width: 1440px) {
     .header-navigation__item {
+        padding: 0 28px;
+    }
+}
+
+@media(max-width: 1420px) {
+    .header-navigation__item {
         padding: 0 26px;
     }
 }
 
-@media screen and (max-width: 1379px) {
+@media(max-width: 1399.9px) {
+    .header-navigation__item {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 1260px) {
+    .qc-img {
+        display: none;
+    }
+
+    .header-navigation__item {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1199.9px) {
+    .consult-box__img_doc {
+        width: 560px;
+    }
+
+    .info-tabs {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-tab {
+        padding: 0;
+    }
+
     .header-navigation {
         display: flex;
         align-items: center;
@@ -28,7 +63,54 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media(max-width: 1199.9px) {
+    .header-logo img {
+        width: 180px;
+    }
+
+    .topbar-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .topbar-boldText {
+        font-size: 16px;
+    }
+
+    .appointment-btn__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .appointment-btn {
+        font-size: 16px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .main-slider__title {
+        font-size: 38px;
+        width: 55%;
+    }
+
+    .btn-blur {
+        width: 350px;
+        height: 100px;
+    }
+
+    .banner-btn {
+        font-size: 16px;
+    }
+
+    .main-slider__subtitle {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .topbar-regText {
+        font-size: 12px;
+    }
+
     .qc-img {
         display: none;
     }
@@ -73,7 +155,7 @@
     .banner-1 {
         width: 100% !important;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: -250px center;
     }
 
     .main-tab__title {
@@ -283,6 +365,25 @@
 
     .consult-box {
         padding: 20px;
+        height: 580px;
+    }
+
+    .consult-box__img_doc {
+        position: relative;
+        top: -70px;
+        left: -40px;
+        width: 460px;
+    }
+    .consult-input{
+        border-radius: 50px;
+    }
+    .consult-agreement__p span{
+        display: contents;
+    }
+    .consult-box__img_tab {
+        width: 230px;
+        top: -510px;
+        left: 250px;
     }
 
     .consult-box__title {
@@ -309,7 +410,7 @@
         font-size: 16px;
     }
 
-    .accordion-thumb::before {
+    /* .accordion-thumb::before {
         content: "";
         display: inline-block;
         background-image: url(../images/svgs/+.webp);
@@ -320,7 +421,7 @@
         left: 20px;
         background-size: cover;
         margin-top: 3px;
-    }
+    } */
 
     .accordion-item {
         padding: 15px 0;
@@ -338,7 +439,36 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media(max-width: 991.9px) {
+    .staff-img {
+        width: 400px;
+    }
+
+    .appointment-btn {
+        /* text-align: center; */
+        max-width: 265px;
+        height: 40px;
+        border-radius: 18px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        outline: none;
+        border: none;
+        width: 134px;
+        background: linear-gradient(180deg, #ffdba9 0%, #d5ab71 100%);
+        box-shadow: 0px 10px 20px rgba(126, 79, 16, 0.2),
+            inset 0px -5px 8px rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        /* padding: 18px 12px 18px 30px; */
+        cursor: pointer;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .appointment-btn__icon {
+        display: none;
+    }
 
     .mySwiper {
         padding: 0 16px !important;
@@ -526,12 +656,13 @@
     }
 
     .topbar-boldText {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .topbar-img {
         width: 35px;
         height: 35px;
+        margin-right: 5px;
     }
 
     .header-logo {
@@ -539,10 +670,13 @@
     }
 
     .topbar-info {
+        min-width: unset;
         width: unset;
     }
 
-    .header-logo img {}
+    .header-logo img {
+        width: 160px;
+    }
 
     .main-tab {
         flex-direction: column;
@@ -563,7 +697,21 @@
 
 }
 
-@media screen and (max-width: 650px) {
+@media(max-width: 767.9px) {
+    .header-topbar {
+        padding: 0;
+    }
+
+    .display-none {
+        display: none !important;
+        transition: 3s;
+    }
+
+    .modal-open {
+        position: fixed;
+        overflow: hidden;
+    }
+
     .map-img {
         display: none;
     }
@@ -963,7 +1111,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media(max-width: 767.9px) {
     .oppor-mark {
         margin-top: 30px;
     }
@@ -1091,6 +1239,7 @@
 
     .topbar-text {
         flex-direction: column-reverse;
+        align-items: flex-end;
     }
 
     .topbar-boldText {
@@ -1149,15 +1298,30 @@
 
     .mobile-logo {
         position: absolute;
-        flex-direction: row;
+        /* flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 80%; */
+        /* display: none; */
+    }
+
+    .mobile-phone {
+        position: absolute;
+        right: 65px;
+        /* flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%; */
         /* display: none; */
     }
 
     .logo-phone {
-        width: 50px;
+        border: none;
+        background-image: url(../images/images/Phone.webp);
+        width: 40px;
+        height: 30px;
+        background-size: cover;
+        position: relative;
     }
 
     .footer-map {
@@ -1765,10 +1929,17 @@
     }
 
     .contact-info__title {
+        margin-top: 15px;
         font-size: 20px;
     }
 
+    .contact-social img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
     .contact-info__p {
+        margin-top: 10px;
         font-size: 16px;
     }
 
@@ -1778,6 +1949,7 @@
 
     .contact-info {
         flex-direction: column;
+        margin-top: 10px;
     }
 
     .contact {
@@ -1830,7 +2002,17 @@
 
     .about-next,
     .about-prev {
-        display: none;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+    }
+
+    .about-next {
+        margin-left: 0;
+    }
+
+    .about-prev {
+        margin-right: 0;
     }
 
     .about-slider {
@@ -2222,6 +2404,7 @@
         width: 100%;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 30px;
     }
 
     .footer-copywrite {
@@ -2443,7 +2626,7 @@
     .header-map {
         display: flex;
         width: 100%;
-        position: absolute;
+        /* position: absolute; */
     }
 
     .header-map__img {
@@ -2475,7 +2658,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media(max-width: 375px) {
     .modal-title__h3 {
         font-size: 26px;
     }
@@ -2696,7 +2879,7 @@
 
 }
 
-@media screen and (max-width: 320px) {
+@media(max-width: 320px) {
     .logo-eye {
         width: 170px;
     }

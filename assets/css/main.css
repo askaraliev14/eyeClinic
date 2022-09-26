@@ -113,6 +113,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .header-logo {
@@ -1772,6 +1773,7 @@ a.fx-Revolve:focus:before {
   line-height: 150%;
   color: #071141;
   padding-left: 13px;
+  display: flex;
 }
 
 .accordion-thumb::before {
@@ -1783,6 +1785,7 @@ a.fx-Revolve:focus:before {
   transition: transform 0.2s ease-out;
   position: relative;
   left: -20px;
+  top: 8px;
 }
 
 /* Panel */
@@ -4586,10 +4589,7 @@ a.fx-Revolve:focus:before {
   display: none;
 }
 
-.display-none {
-  display: none !important;
-  transition: 3s;
-}
+
 
 /* Comments */
 /* MODAL */
@@ -4632,10 +4632,7 @@ a.fx-Revolve:focus:before {
   flex-direction: column;
 }
 
-.modal-open {
-  position: fixed;
-  overflow: hidden;
-}
+
 
 .modal-window__body {
   margin-top: 20px;
