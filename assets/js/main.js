@@ -90,9 +90,9 @@ var swiper2 = new Swiper(".certificateSwiper", {
   slidesPerView: "auto",
   centeredSlides: true,
   loop: true,
-  slidesPerGroup: 1,
+  slidesPerView: 1,
   paginationClickable: true,
-  spaceBetween: 40,
+  spaceBetween: 10,
   pagination: {
     el: ".cert-pagination",
     type: "fraction",

@@ -1097,7 +1097,7 @@ a.fx-Revolve:focus:before {
 
 .certificate-slider {
   margin-top: 30px;
-  width: 325px;
+  width: 225px;
   height: 310px;
   filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.1));
   border-radius: 10px;
@@ -1115,31 +1115,35 @@ a.fx-Revolve:focus:before {
 
 .arrow-right,
 .arrow-left {
-  position: absolute;
   width: 30px;
   height: 30px;
   top: 43%;
   background: url(../images/svgs/ArrowSM.svg);
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 2;
+}
+
+.certificate-slider__box {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .certificate-slide {
   width: 225px;
   height: 310px;
   flex-shrink: 0;
-  width: 225px !important;
+  /* width: 225px !important; */
   height: 310px;
   position: relative;
   transition-property: transform;
 }
 
-.arrow-right {
-  right: 275px;
-}
+.arrow-right {}
 
 .arrow-left {
-  left: 275px;
   transform: rotate(180deg);
 }
 

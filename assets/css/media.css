@@ -11,6 +11,10 @@
 }
 
 @media(max-width: 1399.9px) {
+    .info-tab {
+        padding: 10px;
+    }
+
     .header-navigation__item {
         padding: 0 20px;
     }
@@ -64,6 +68,34 @@
 }
 
 @media(max-width: 1199.9px) {
+    .staff-univP {
+        font-size: 16px;
+    }
+
+    .staff-card {
+        padding: 30px;
+        height: unset;
+    }
+
+    .staff-img {
+        position: relative;
+        top: -5px;
+        left: -5px;
+        width: 350px;
+    }
+
+    .certificate-slider {
+        /* margin-top: 130px; */
+        width: 180px !important;
+        height: 220px;
+    }
+
+    .cert-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     .header-logo img {
         width: 180px;
     }
@@ -350,10 +382,13 @@
 
     .consult-input {
         width: 65%;
+        font-size: 20px;
     }
-
+    .flex{
+        padding-left: unset;
+    }
     .consult-btn {
-        height: 80px;
+        height: 72px;
         font-size: 16px;
         line-height: 18px;
         text-transform: capitalize;
@@ -374,12 +409,15 @@
         left: -40px;
         width: 460px;
     }
-    .consult-input{
+
+    .consult-input {
         border-radius: 50px;
     }
-    .consult-agreement__p span{
+
+    .consult-agreement__p span {
         display: contents;
     }
+
     .consult-box__img_tab {
         width: 230px;
         top: -510px;
@@ -440,8 +478,111 @@
 }
 
 @media(max-width: 991.9px) {
+    .consult-box__img_tab{
+        display: none;
+    }
+    .footer-copywrite p {
+        font-size: 14px;
+    }
+
+    .footer-link a {
+        font-size: 14px;
+    }
+
+    .copywrite-link {
+        padding: 10px;
+    }
+
+    .copywrite-link a {
+        font-size: 14px;
+    }
+
+    .footer-logo p {
+        font-size: 16px;
+    }
+
+    .footer-nav {
+        height: unset;
+    }
+
+    .footer-phone__text span {
+        font-size: 16px;
+    }
+
+    .footer-phone__text p {
+        font-size: 12px;
+    }
+
+    .footer-phone {
+        align-items: center;
+    }
+
+    .footer-phone img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .footer-logo img {
+        width: 180px;
+        height: 100%;
+    }
+
+    .main-slider {
+        left: 130px;
+    }
+
+    .service-doc__info_p1 {
+        font-size: 14px;
+    }
+
+    .banner-1 {
+        background-position: -320px center;
+    }
+
+    .service-doc__info_p2 {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .service-doc__info_p3 {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .main-doc {
+        width: 225px;
+        height: 90px;
+        border-radius: 80px;
+        background-image: url(../images/svgs/main-border.svg);
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        position: relative;
+        left: 57%;
+        top: -28%;
+    }
+
+    .btn-img::before {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+    }
+
+    .btn-next,
+    .btn-prev {
+        width: 70px;
+        height: 74px;
+        background-size: contain;
+    }
+
     .staff-img {
-        width: 400px;
+        margin-left: 80px;
+    }
+
+    .certificate-slider__box {
+        display: none;
     }
 
     .appointment-btn {
@@ -1479,7 +1620,7 @@
         width: 80px;
     }
 
-    .certificate-slider {
+    .certificate-slider__box {
         display: none;
     }
 
