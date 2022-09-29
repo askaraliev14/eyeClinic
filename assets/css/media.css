@@ -162,7 +162,7 @@
     }
 
     .header-navigation__item {
-        padding: 0 5px;
+        padding: 0 12px;
     }
 
     .header-navigation__link {
@@ -384,9 +384,11 @@
         width: 65%;
         font-size: 20px;
     }
-    .flex{
+
+    .flex {
         padding-left: unset;
     }
+
     .consult-btn {
         height: 72px;
         font-size: 16px;
@@ -478,9 +480,13 @@
 }
 
 @media(max-width: 991.9px) {
-    .consult-box__img_tab{
+    .header-navigation__item {
+        padding: 0 6px;
+    }
+    .consult-box__img_tab {
         display: none;
     }
+
     .footer-copywrite p {
         font-size: 14px;
     }
@@ -536,7 +542,11 @@
     }
 
     .banner-1 {
-        background-position: -320px center;
+        background-position: -375px center;
+    }
+
+    .btn-blur {
+        backdrop-filter: unset;
     }
 
     .service-doc__info_p2 {
@@ -549,9 +559,13 @@
         font-size: 10px;
     }
 
+    .main-doc__text {
+        padding: 6px 20px;
+    }
+
     .main-doc {
-        width: 225px;
-        height: 90px;
+        width: 190px;
+        height: 70px;
         border-radius: 80px;
         background-image: url(../images/svgs/main-border.svg);
         background-size: contain;
@@ -560,8 +574,8 @@
         justify-content: center;
         padding: 7px;
         position: relative;
-        left: 57%;
-        top: -28%;
+        left: 47%;
+        top: -33%;
     }
 
     .btn-img::before {
@@ -1917,11 +1931,24 @@
         width: 100%;
     }
 
+    .equipment-box__text_p {
+        margin-bottom: 50px;
+    }
+
+    .equipment-container:last-child {
+        margin-bottom: 90px;
+    }
+
     .equipment-box__tag {}
+
+    .equipment-box__text {}
+
+    .equipment-box__img {
+        /* height: 340px; */
+    }
 
     .equipment-box {
         width: 100%;
-        height: 892px;
         background-image: url("../images/svgs/equipment-box.webp");
         margin-top: 170px;
         padding: 0px 30px;
@@ -1929,7 +1956,12 @@
         flex-direction: column;
         align-items: center;
         background-size: cover;
-        background-position: center;
+        background-position: center 15px;
+        height: 100%;
+        background-repeat: no-repeat;
+        min-height: unset;
+        max-height: unset;
+        margin-bottom: 70px;
     }
 
     .equipment-container {
@@ -2799,7 +2831,20 @@
     }
 }
 
+@media(max-width: 425px) {
+    .equipment-box__text {
+        margin-top: 270px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media(max-width: 375px) {
+    .equipment-box__text {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+    }
     .modal-title__h3 {
         font-size: 26px;
     }
