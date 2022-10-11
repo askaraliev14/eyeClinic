@@ -52,24 +52,10 @@ var swiper4 = new Swiper(".licenseSwiper2", {
   },
 });
 var swiper5 = new Swiper(".reviewSlider", {
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  // slidesPerView: 4,
+  slidesPerView: 4,
   spaceBetween: 16,
   loop: true,
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 40
-    }
   },
   scrollbar: {
     el: ".review-scroll",
@@ -220,6 +206,18 @@ const showModal = function (e) {
 $(".js-modal").click(function () {
   $('body').addClass('modal-open');
 })
+$(".diagnose-method__video1").click(function () {
+  $(".diagnose-method__btn1").toggleClass('play-none');
+})
+$(".diagnose-method__video2").click(function () {
+  $(".diagnose-method__btn2").toggleClass('play-none');
+})
+$(".diagnose-method__video3").click(function () {
+  $(".diagnose-method__btn3").toggleClass('play-none');
+})
+$(".diagnose-method__video4").click(function () {
+  $(".diagnose-method__btn4").toggleClass('play-none');
+})
 $(".js-modal").click(function () {
   $('.mySwiper').addClass('display-none');
 })
@@ -285,7 +283,104 @@ function lightboxTrigger() {
     }
   });
 }
+var plugin_url = "https://plugins.svn.wordpress.org/play-pause-button-for-video/trunk";
+jQuery(document).ready(function () {
+  if (jQuery("video").length > 0) {
+    jQuery("video").wrap("<div class='video-parent-class'></div>");
+    /*Add image just before to vedio  */
+    jQuery("video").each(function (index) {
+      /*vedio parent div height width code*/
+      var vedio_width = jQuery(this).width();
+      var vedio_height = jQuery(this).height();
+      jQuery(".video-parent-class").css({
+        "width": "100%",
+        "height": "100%"
+      });
 
+      /*Pause Play image, middle width in vedio code*/
+      var half_width_vedio = vedio_width / 2;
+      var middle_object_width = half_width_vedio - 32;
+      jQuery(".pause-play-img").css({
+        "left": middle_object_width + "px"
+      });
+
+      /*Pause Play image middle height in vedio code*/
+      var half_height_vedio = vedio_height / 2;
+      var middle_object_heigh = half_height_vedio - 32;
+      jQuery(".pause-play-img").css({
+        "top": middle_object_heigh + "px"
+      });
+
+      /*Pause play and image src change code*/
+      jQuery(this).on("click", function () {
+        if (this.paused) {
+          this.play();
+        } else {
+          this.pause();
+        }
+      });
+
+
+      /*pause play image click vedio on off functionlity code*/
+      jQuery(this).prev().on("click", function () {
+        var myVideo = jQuery(this).next()[0];
+        if (myVideo.paused) {
+
+          myVideo.play();
+        } else {
+
+          myVideo.pause();
+        }
+
+      });
+      /*Floating js for HTML Video Start*/
+      var windows = jQuery(window);
+      var videoWrap = jQuery(this).parent();
+      var video = jQuery(this);
+      var videoHeight = video.outerHeight();
+      var videoElement = video.get(0);
+      windows.on('scroll', function () {
+        var windowScrollTop = windows.scrollTop();
+        var videoBottom = videoHeight + videoWrap.offset().top;
+        //alert(videoBottom);
+
+        if ((windowScrollTop > videoBottom)) {
+          if (!videoElement.paused) {
+            videoWrap.height(videoHeight);
+            video.addClass('stuck');
+            if (video.hasClass('stuck')) {
+              video.attr("controls", "1");
+            }
+            video.prev().attr("src", plugin_url + "/img/img02.png");
+            jQuery(".scrolldown").css({
+              "display": "none"
+            });
+          } else {
+            videoWrap.height('auto');
+            video.removeClass('stuck');
+            video.removeAttr('controls');
+            if (videoElement.paused) {
+              video.prev().attr("src", plugin_url + "/img/img01.png");
+            }
+          }
+
+        } else {
+          videoWrap.height('auto');
+          video.removeClass('stuck');
+          video.removeAttr('controls');
+        }
+
+      });
+      /*Floating js for HTML Video End*/
+    });
+    /*After end vedio change image*/
+    //                     var video = document.getElementsByTagName('video')[0];
+
+    //                     video.onended = function(e) {
+    //                         jQuery(".pause-play-img").attr("src", plugin_url + "/img/img01.png");
+    //                     };
+  }
+});
 
 /* global window, document, define, jQuery, setInterval, clearInterval */
 ! function (i) {
@@ -975,10 +1070,6 @@ function lightboxTrigger() {
     return o
   }
 });
-
-/*! Magnific Popup - v1.1.0 - 2016-02-20
- * http://dimsemenov.com/plugins/magnific-popup/
- * Copyright (c) 2016 Dmitry Semenov; */
 ! function (a) {
   "function" == typeof define && define.amd ? define(["jquery"], a) : a("object" == typeof exports ? require("jquery") : window.jQuery || window.Zepto)
 }(function (a) {

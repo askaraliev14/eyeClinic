@@ -240,6 +240,10 @@ body {
   font-weight: 400;
 }
 
+.header-navigation__link:hover {
+  color: #DB9639;
+}
+
 /* ***************HEADER****************** */
 /* ***************BUTTON GROUP****************** */
 
@@ -260,6 +264,10 @@ body {
   align-items: center;
   padding: 18px 12px 18px 30px;
   cursor: pointer;
+}
+
+.appointment-btn:hover {
+  box-shadow: 0px 0px 20px #d5ab71, inset 0px 0px 10px #ffdba9;
 }
 
 .appointment-btn::before {
@@ -355,6 +363,10 @@ body {
   margin-top: 30px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.banner-btn:hover {
+  box-shadow: 0px 0px 20px #69b5e0, inset 0px 0px 10px #8ecef3;
 }
 
 .btn-blur {
@@ -1081,6 +1093,10 @@ a.fx-Revolve:focus:before {
   border: none;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.staff-info__btn:hover {
+  box-shadow: 0px 4px 30px #d5ab71, inset 0px 0px 10px #ffdba9;
 }
 
 .img-box {
@@ -2636,7 +2652,6 @@ a.fx-Revolve:focus:before {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 .service-tab__text {
@@ -2651,6 +2666,48 @@ a.fx-Revolve:focus:before {
   line-height: 120%;
   display: flex;
   color: #071141;
+}
+
+.service-tab__text_span a {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  display: flex;
+  color: #071141;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service-tab__text_span:hover i {
+  position: relative;
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
 }
 
 .service-tab__text_span i {
@@ -3046,30 +3103,42 @@ a.fx-Revolve:focus:before {
   font-size: 16px;
   line-height: 160%;
   color: rgba(0, 32, 51, 0.6);
+  margin-bottom: 16px;
 }
 
-.diagnose-method__img {
-  background-image: url(../images/images/eye-diagnose.webp);
+.diagnose-method__video1,
+.diagnose-method__video2,
+.diagnose-method__video3,
+.diagnose-method__video4 {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  position: relative;
 }
 
-.diagnose-method__btn {
+.diagnose-method__btn1,
+.diagnose-method__btn2,
+.diagnose-method__btn3,
+.diagnose-method__btn4 {
   width: 124px;
   height: 124px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
-.diagnose-method__btn::before {
+
+.diagnose-method__btn1::before,
+.diagnose-method__btn2::before,
+.diagnose-method__btn3::before,
+.diagnose-method__btn4::before {
   content: "";
   position: absolute;
   width: 124px;
@@ -3078,6 +3147,12 @@ a.fx-Revolve:focus:before {
   background-color: #fff;
   opacity: 0.3;
   border: 1px solid #ffffff;
+}
+
+.diagnose-video {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 20px;
 }
 
 .diagnose-method__btnInner {
@@ -5547,3 +5622,80 @@ screen and (max-height: 300px) {
 }
 
 /* SLIDER CUSTOM DOC */
+
+/* Custom Video */
+.video-parent-class {
+  margin: 0 auto;
+}
+
+.pause-play-img {
+  position: absolute;
+  /*top: 50%;*/
+  z-index: 99;
+  /*margin-top: -50px;*/
+  left: 50%;
+  display: none;
+  opacity: 0.4;
+  width: 64px;
+}
+
+.video-parent-class:hover img.pause-play-img {
+  display: block;
+}
+
+.video-parent-class {
+  position: relative;
+}
+
+/*Floating CSS Start*/
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.stuck {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(100%);
+  width: 260px;
+  height: 145px;
+  animation: fade-in-up .25s ease forwards;
+  z-index: 999;
+}
+
+/*Floating CSS End*/
+p.scrolldown {
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid;
+  background: #ff7037;
+  position: fixed;
+  right: 75px;
+  color: #fff;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+.container-fluid {
+  width: 600px;
+}
+
+.play-none {
+  display: none !important;
+}
+
+/* Custom Video */
