@@ -1151,7 +1151,7 @@ a.fx-Revolve:focus:before {
 .cert-img {
   width: 225px;
   height: 310px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .cert-pagination {
@@ -4084,7 +4084,6 @@ a.fx-Revolve:focus:before {
 
 .swiper-scrollbar-drag {
   height: 100%;
-  width: 350px !important;
   position: relative;
   background: #FFDBA9 !important;
   border-radius: 20px !important;
@@ -4950,7 +4949,7 @@ a.fx-Revolve:focus:before {
 }
 
 .mfp-gallery .mfp-content img {
-  width: 100%;
+  width: 500px;
   padding: 0;
 }
 
@@ -4962,7 +4961,7 @@ a.fx-Revolve:focus:before {
   height: 50px;
   padding: 0;
   padding-left: 5px;
-  background-color: #000;
+  background-color: transparent;
   opacity: 1;
   text-align: center;
 }
@@ -4973,7 +4972,7 @@ a.fx-Revolve:focus:before {
   width: 52px;
   height: 52px;
   margin-top: -26px;
-  background-color: #000;
+  background-color: transparent;
   padding: 0;
   font-size: 0;
   z-index: 2;
@@ -4982,7 +4981,7 @@ a.fx-Revolve:focus:before {
 }
 
 .mfp-gallery .mfp-arrow.mfp-arrow-left {
-  left: 25px;
+  left: 200px;
 }
 
 .mfp-gallery .mfp-arrow.mfp-arrow-left::before {
@@ -5006,7 +5005,7 @@ a.fx-Revolve:focus:before {
 }
 
 .mfp-gallery .mfp-arrow.mfp-arrow-right {
-  right: 25px;
+  right: 200px;
 }
 
 .mfp-gallery .mfp-arrow.mfp-arrow-right::before {
@@ -5035,7 +5034,7 @@ a.fx-Revolve:focus:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: transparent;
   z-index: -1;
   transition: left 0.15s;
 }
@@ -5232,7 +5231,7 @@ button::-moz-focus-inner {
   top: 0;
   right: 0;
   color: #CCC;
-  font-size: 12px;
+  font-size: 0;
   line-height: 18px;
   white-space: nowrap;
 }
@@ -5310,6 +5309,7 @@ img.mfp-img {
   line-height: 0;
 }
 
+/* 
 .mfp-figure:after {
   content: "";
   position: absolute;
@@ -5323,7 +5323,7 @@ img.mfp-img {
   z-index: -1;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   background: #444;
-}
+} */
 
 .mfp-figure small {
   color: #BDBDBD;
@@ -5411,7 +5411,7 @@ screen and (max-height: 300px) {
     width: 35px;
     height: 35px;
     line-height: 35px;
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
     position: fixed;
     text-align: center;
     padding: 0;
