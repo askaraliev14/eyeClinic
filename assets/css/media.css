@@ -1042,6 +1042,10 @@
         padding-left: 20px;
     }
 
+    .accordion-thumb::before {
+        left: -5px;
+    }
+
     .accordion-panel {
         padding: 0 5px;
         margin-top: 10px;

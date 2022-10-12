@@ -1882,6 +1882,7 @@ a.fx-Revolve:focus:before {
 .accordion-item {
   border-bottom: 1px solid #f2f2f2;
   padding: 25px 0;
+  position: relative;
 }
 
 /* Thumb */
@@ -1896,16 +1897,17 @@ a.fx-Revolve:focus:before {
   color: #071141;
   padding-left: 13px;
   display: flex;
+  position: relative;
 }
 
 .accordion-thumb::before {
   content: "";
+  position: absolute;
   display: inline-block;
   background-image: url(../images/svgs/+.webp);
   height: 24px;
   width: 24px;
   transition: transform 0.2s ease-out;
-  position: relative;
   left: -20px;
   top: 8px;
 }
