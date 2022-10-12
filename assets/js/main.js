@@ -12,7 +12,7 @@ var swiper1 = new Swiper(".mySwiper", {
 });
 
 
-var swiper2 = new Swiper(".certificateSwiper", {
+var swiper2 = new Swiper(".certificateSwiper1", {
   slidesPerView: "auto",
   centeredSlides: true,
   loop: true,
@@ -24,11 +24,58 @@ var swiper2 = new Swiper(".certificateSwiper", {
     type: "fraction",
   },
   navigation: {
-    nextEl: ".arrow-right",
-    prevEl: ".arrow-left",
+    nextEl: ".arrow-right1",
+    prevEl: ".arrow-left1",
   },
 });
-
+var swiper2 = new Swiper(".certificateSwiper2", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 1,
+  paginationClickable: true,
+  spaceBetween: 10,
+  pagination: {
+    el: ".cert-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".arrow-right2",
+    prevEl: ".arrow-left2",
+  },
+});
+var swiper2 = new Swiper(".certificateSwiper3", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 1,
+  paginationClickable: true,
+  spaceBetween: 10,
+  pagination: {
+    el: ".cert-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".arrow-right3",
+    prevEl: ".arrow-left3",
+  },
+});
+var swiper2 = new Swiper(".certificateSwiper4", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 1,
+  paginationClickable: true,
+  spaceBetween: 10,
+  pagination: {
+    el: ".cert-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".arrow-right4",
+    prevEl: ".arrow-left4",
+  },
+});
 var swiper3 = new Swiper(".licenseSwiper", {
   slidesPerView: "auto",
   centeredSlides: true,
@@ -56,11 +103,19 @@ var swiper5 = new Swiper(".reviewSlider", {
   spaceBetween: 16,
   loop: true,
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
   },
   scrollbar: {
     el: ".review-scroll",
-    hide: true,
-    dragSize: 300
+    draggable: true,
+    // dragSize: 
   },
   navigation: {
     nextEl: ".review-next",
@@ -92,7 +147,7 @@ var swiper2 = new Swiper(".thumbSlider2", {
     swiper: swiper,
   },
 });
-
+swiper.scrollbar.updateSize();
 $(function () {
   // (Optional) Active an item if it has the class "is-active"	
   $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
@@ -288,6 +343,7 @@ jQuery(document).ready(function () {
   if (jQuery("video").length > 0) {
     jQuery("video").wrap("<div class='video-parent-class'></div>");
     /*Add image just before to vedio  */
+    jQuery("<img class='pause-play-img' src='https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/play-btn.png' >").insertBefore("video");
     jQuery("video").each(function (index) {
       /*vedio parent div height width code*/
       var vedio_width = jQuery(this).width();
@@ -299,7 +355,7 @@ jQuery(document).ready(function () {
 
       /*Pause Play image, middle width in vedio code*/
       var half_width_vedio = vedio_width / 2;
-      var middle_object_width = half_width_vedio - 32;
+      var middle_object_width = half_width_vedio - 62;
       jQuery(".pause-play-img").css({
         "left": middle_object_width + "px"
       });
@@ -315,8 +371,10 @@ jQuery(document).ready(function () {
       jQuery(this).on("click", function () {
         if (this.paused) {
           this.play();
+          jQuery(this).prev().attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/pause-btn.png");
         } else {
           this.pause();
+          jQuery(this).prev().attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/play-btn.png");
         }
       });
 
@@ -325,11 +383,11 @@ jQuery(document).ready(function () {
       jQuery(this).prev().on("click", function () {
         var myVideo = jQuery(this).next()[0];
         if (myVideo.paused) {
-
           myVideo.play();
+          jQuery(this).attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/pause-btn.png");
         } else {
-
           myVideo.pause();
+          jQuery(this).attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/play-btn.png");
         }
 
       });
@@ -351,7 +409,7 @@ jQuery(document).ready(function () {
             if (video.hasClass('stuck')) {
               video.attr("controls", "1");
             }
-            video.prev().attr("src", plugin_url + "/img/img02.png");
+            video.prev().attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/pause-btn.png");
             jQuery(".scrolldown").css({
               "display": "none"
             });
@@ -360,7 +418,7 @@ jQuery(document).ready(function () {
             video.removeClass('stuck');
             video.removeAttr('controls');
             if (videoElement.paused) {
-              video.prev().attr("src", plugin_url + "/img/img01.png");
+              video.prev().attr("src", "https://raw.githubusercontent.com/askaraliev14/eyeClinic/ca929ddf3dd605c507971a5e4bd7ea43ed462f31/assets/images/images/play-btn.png");
             }
           }
 

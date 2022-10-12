@@ -218,6 +218,10 @@
         font-size: 24px;
     }
 
+    .service-tab__text_span a {
+        font-size: 24px;
+    }
+
     .service-tab__text p {
         font-size: 14px;
     }
@@ -483,6 +487,7 @@
     .header-navigation__item {
         padding: 0 6px;
     }
+
     .consult-box__img_tab {
         display: none;
     }
@@ -678,7 +683,7 @@
     }
 
     .services-clinic {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .services-clinic__title {
@@ -1831,6 +1836,10 @@
         font-size: 20px;
     }
 
+    .service-tab__text_span a {
+        font-size: 20px;
+    }
+
     .diagnose-slide__text h1 {
         font-size: 24px;
     }
@@ -2343,7 +2352,7 @@
     }
 
     .main-tab {
-        width: 50%;
+        width: 33%;
     }
 
     .qc-h2 {
@@ -2832,6 +2841,11 @@
 }
 
 @media(max-width: 425px) {
+
+    .main-tab__subtitle {
+        font-size: 0;
+    }
+
     .equipment-box__text {
         margin-top: 270px;
         display: flex;
@@ -2845,6 +2859,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .modal-title__h3 {
         font-size: 26px;
     }
